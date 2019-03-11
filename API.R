@@ -15,7 +15,7 @@ getPages <- function(x, simplify = FALSE)
     i <- 1
     more <- TRUE
     result <- list()
-    while(more)
+    while(isTRUE(more))
     {
         resPage <- ghGET(x, query = list(page = i))
         link <- headers(resPage)$link
@@ -52,11 +52,23 @@ nMembers <- sapply(seq_len(nTeams),
                    
 teams$nMembers <- nMembers
 
+members <- sapply(seq_len(nTeams),
+                   function(i)
+                   {
+                       res <- getPages(paste0("/teams/",
+                                              teams[i, "id"],
+                                              "/members"))
+                       nms <- sapply(res, function(x) x$login)
+                       paste(nms, collapse = ", ")
+                   }
+                  )
+teams$members <- members
+
 saveRDS(teams, "teams.Rds")
 
 write.csv2(teams[, c("name", "id", "slug",
-                     "html_url", "nMembers")],
-           file = "teams.csv"),
+                     "nMembers", "members")],
+           file = "teams.csv",
            row.names = FALSE)
 
 ##################################################################
@@ -94,7 +106,7 @@ teamsByRepo <- lapply(seq_len(nRepos),
 teamsByRepo <- rbindlist(teamsByRepo)
 
 write.csv2(teamsByRepo,
-           file = paste0("teamsByRepo.csv"),
+           file = "teamsByRepo.csv",
            row.names = FALSE)
 
                       
