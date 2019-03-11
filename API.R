@@ -56,7 +56,7 @@ saveRDS(teams, "teams.Rds")
 
 write.csv2(teams[, c("name", "id", "slug",
                      "html_url", "nMembers")],
-           file = paste0("teams_",Sys.Date(), ".csv"),
+           file = "teams.csv"),
            row.names = FALSE)
 
 ##################################################################
@@ -94,9 +94,7 @@ teamsByRepo <- lapply(seq_len(nRepos),
 teamsByRepo <- rbindlist(teamsByRepo)
 
 write.csv2(teamsByRepo,
-           file = paste0("teamsByRepo",
-                         Sys.Date(),
-                         ".csv"),
+           file = paste0("teamsByRepo.csv"),
            row.names = FALSE)
 
                       
