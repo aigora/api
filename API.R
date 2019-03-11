@@ -104,9 +104,22 @@ teamsByRepo <- lapply(seq_len(nRepos),
                                   id = NA)
                       })   
 teamsByRepo <- rbindlist(teamsByRepo)
-
+## Añade información de integrantes de cada equipo
+teamsByRepo <- merge(teamsByRepo,
+                      teams[, .(name, id,
+                                nMembers, members)])
 write.csv2(teamsByRepo,
            file = "teamsByRepo.csv",
            row.names = FALSE)
 
-                      
+## Un fichero por cada grupo de matriculación
+repoNames <- teamsByRepo$repo_name
+groups <- c("E100", "E105", "Q103", "A104", "A109")
+lapply(groups, function(group)
+{
+    idx <- grep(paste0("tw", group), repoNames)
+    write.csv2(teamsByRepo[idx, ],
+           file = paste0("tw", group, ".csv"),
+           row.names = FALSE)
+})
+
