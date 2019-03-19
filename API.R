@@ -34,7 +34,7 @@ aigora <- ghGET("/orgs/aigora")
 
 ##################################################################
 ## TEAMS
-##################################################################
+# #################################################################
 
 teams <- getPages("/orgs/aigora/teams", simplify = TRUE)
 
@@ -64,7 +64,7 @@ members <- sapply(seq_len(nTeams),
                   )
 teams$members <- members
 
-saveRDS(teams, "teams.Rds")
+
 
 write.csv2(teams[, c("name", "id", "slug",
                      "nMembers", "members")],
@@ -77,8 +77,6 @@ write.csv2(teams[, c("name", "id", "slug",
 
 repos <- getPages("/orgs/aigora/repos")
 nmsRep <- sapply(repos, function(x) x$name)
-
-saveRDS(repos, "repos.Rds")
 
 nRepos <- length(repos)
 
