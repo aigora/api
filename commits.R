@@ -46,3 +46,4 @@ lapply(seq_along(commits), function(i)
               file = paste0("csv/commits_", twRepos[i], ".csv"),
               row.names = FALSE)
 )
+
