@@ -5,6 +5,8 @@ source('API.R')
 ##################################################################
 
 ## Recupera consulta previa
+teams <- fread('csv/teams.csv')
+
 teamsByRepo <- fread("csv/teamsByRepo.csv")
 
 ## Recupera datos de un grupo de matriculación. P.ej E105
@@ -38,6 +40,7 @@ teamsByRepo <- lapply(seq_len(nRepos),
                                   id = NA)
                       })   
 teamsByRepo <- rbindlist(teamsByRepo)
+
 ## Añade información de integrantes de cada equipo
 teamsByRepo <- merge(teamsByRepo,
                       teams[, .(name, id,

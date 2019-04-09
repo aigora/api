@@ -4,7 +4,7 @@ source('API.R')
 ## TEAMS
 # #################################################################
 ## Recupera resultados de una consulta previa
-teams <- fread('teams.csv')
+teams <- fread('csv/teams.csv')
 
 
 ## Sólo ejecutar para enviar una nueva consulta a GitHub
@@ -40,5 +40,5 @@ teams$members <- members
 
 write.csv2(teams[, c("name", "id", "slug",
                      "nMembers", "members")],
-           file = "teams.csv",
+           file = "csv/teams.csv",
            row.names = FALSE)

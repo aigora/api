@@ -12,6 +12,7 @@ twRepos <- repoNames[grepl("tw", repoNames)]
 
 commits <- lapply(twRepos, function(x)
 {
+    cat(x, "\n")
     vals <- ghGET(paste0("/repos/aigora/",
                          x,
                          "/commits"))
@@ -40,7 +41,8 @@ write.csv(resumen,
           file = 'csv/resumen_commits.csv',
           row.names = FALSE)
 
-lapply(commits, function(x)     write.csv(res,
-               file = paste0("csv/commits_", x, ".csv"),
-               row.names = FALSE)
+lapply(seq_along(commits), function(i)
+    write.csv(commits[[i]],
+              file = paste0("csv/commits_", twRepos[i], ".csv"),
+              row.names = FALSE)
 )
