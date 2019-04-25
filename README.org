@@ -18,10 +18,85 @@ La función principal =ghGET= contenida en el fichero [[API.R]] accede a la API 
 
 *** Instalación de paquetes
 
-El código trabaja en base a dos paquetes: =httr=, para acceder a la API mediante comandos =GET=; =data.table= para manipular la información, y para almacenar y leer ficheros CSV. Se pueden instalar con el gestor de paquetes de RStudio (menú situado en la ventana inferior derecha) o con código en la consola de R:
+El código trabaja en base a dos paquetes: [[https://httr.r-lib.org][httr]], para acceder a la API mediante comandos =GET=; [[https://github.com/Rdatatable/data.table/wiki][data.table]] para manipular la información, y para almacenar y leer ficheros CSV. Se pueden instalar con el gestor de paquetes de RStudio (menú situado en la ventana inferior derecha) o con código en la consola de R:
 
-=install.packages(c("httr", "data.table"))=
+#+begin_src R
+install.packages(c("httr", "data.table"))
+#+end_src
 
-La instalación sólo es necesaria una vez.
+Para emplear el código contenido en [[xls.R]] hace falta instalar el paquete [[https://github.com/awalker89/openxlsx#openxlsx][openxlsx]]:
+
+#+begin_src R
+install.packages("openxlsx")
+#+end_src
 
 
+La instalación de paquetes sólo es necesaria una vez.
+
+** Organización del código
+
+Además del fichero [[API.R]], existen otros ficheros de código:
+
+- [[teams.R]]: accede a la información de los equipos de la organización AIGORA.
+- [[repos.R]]: accede a la información de los repositorios, relacionando con los equipos.
+- [[commits.R]]: accede a la información de cambios en los repositorios, relacionando con equipos e integrantes.
+- [[xls.R]]: genera ficheros Excel con la información obtenida.
+
+Salvo [[xls.R]], todo el código genera ficheros CSV almacenados en la carpeta [[csv/]].
+
+
+** Ejecución del código
+
+Para ejecutar el código hay que abrir el fichero deseado desde el explorador de archivos. Se ejecutará automáticamente RStudio. Se puede avanzar línea a línea con la combinación =Ctrl + Intro=, o ejecutar el fichero completo con =Ctrl+Shift+S=. Más información en esta [[https://support.rstudio.com/hc/en-us/articles/200711853-Keyboard-Shortcuts][página de ayuda]].
+
+*** Información de Equipos
+
+ El fichero [[teams.R]] genera el fichero [[csv/teams.csv]]. Consta de 5 columnas: 
+
+ - =name=: nombre del equipo.
+ - =id=: código numérico de identificación del equipo.
+ - =slug=: identificador alfanumérico del equipo.
+ - =nMembers=: número de integrantes.
+ - =members=: lista separada por comas de los integrantes del equipo.
+
+
+*** Información de Repositorios
+
+ El fichero [[repos.R]] genera el fichero [[csv/teamsByRepo.csv]]. Este fichero incluye los repositorios a los que cada equipo tiene acceso.
+
+ Consta de 6 columnas: 
+
+ - =name=: nombre del equipo.
+ - =id=: código numérico de identificación del equipo.
+ - =repo_name=: identificador alfanumérico del repositorio.
+ - =slug=: identificador alfanumérico del equipo.
+ - =nMembers=: número de integrantes.
+ - =members=: lista separada por comas de los integrantes del equipo.
+
+ A partir de esta información genera un fichero csv por cada grupo de matriculación incluyendo únicamente la información relativa a los equipos de trabajo que pertenecen a ese grupo de matriculación: [[csv/twE100.csv]], [[csv/twE105.csv]], [[csv/twQ103.csv]], [[csv/twA104.csv]], [[csv/twA109.csv]].
+
+*** Información de /commits/ en repositorios
+
+ El fichero [[commits.R]] obtiene la información de los /commits/ realizados en cada repositorio tipo =tw=. Genera un fichero =csv/commits_*= por cada repositorio listado en el fichero [[csv/teamsByRepo.csv]]. Estos ficheros contienen dos columnas: 
+ - =name=, nombre del integrante del equipo que ha realizado el /commit/.
+ - =date=, fecha y hora en la que se realizó el /commit/.
+
+ Además, genera un fichero de datos agregados, [[csv/resumen_commits.csv]], con tres columnas:
+ - =repo=, nombre del repositorio
+ - =N=, número de /commits/ realizados.
+ - =last=, fecha y hora del último /commit/ realizado.
+
+
+*** Información en formato /Excel/
+
+ El fichero [[xls.R]] condensa los principales ficheros csv indicados anteriormente, para producir un libro excel con las siguientes hojas:
+ - Equipos: fichero =teamsByRepo.csv=.
+ - E105: información de los equipos de trabajo del grupo E105, fichero =twE105.csv=.
+ - E100, A104, A109, Q103: ídem.
+ - Resumen commits: fichero =resumen_commits.csv=.
+
+ Este fichero se graba en la carpeta temporal de la sesión. Para localizar esta carpeta hay que ejecutar en R:
+
+ #+begin_src R
+tempdir()
+ #+end_src
