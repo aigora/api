@@ -1,0 +1,27 @@
+* Acceso a la API de GitHub con R
+
+Este documento proporciona instrucciones para emplear el código =R= que permite obtener los datos de equipos de trabajo y repositorios de AIGORA a través de la API de GitHub.
+
+** Primeros pasos
+
+*** Autenticación con un PAT
+
+La función principal =ghGET= contenida en el fichero [[API.R]] accede a la API de GitHub mediante autenticación con un /Personal Access Token/ (PAT). Para poder usar el código es imprescindible obtener un PAT:
+
+1. Entra en tu cuenta de GitHub y ve a https://github.com/settings/tokens.
+2. Pulsa /Generate new token/, y dale un nombre que te sirva para recordar el propósito.
+3. Selecciona los siguientes permisos: =repo:status=, =public_repo=, =read:org=, =read:user=, =user:email=.
+4. Al pulsar /Generate token/ se mostrará un código alfanumérico de 40 elementos. *Copia el código en el portapapeles* porque sólo se muestra una vez.
+5. Crea (o modifica) un fichero de texto plano denominado =.Renviron= (atención al punto inicial) en =HOME= (en Windows es habitualmente =C:\Users\username=, pero se puede comprobar en =R= con el comando =path.expand("~")=).
+6. Escribe en este fichero la siguiente línea (sustituyendo el código alfanumérico por el correspondiente a tu PAT obtenido en el punto 4): =GITHUB_PAT=8c70fd8419398999c9ac5bacf3192882193cadf2=, y añade una línea adicional en blanco a continuación.
+7. Guarda y cierra este fichero, y abre R + RStudio.
+
+*** Instalación de paquetes
+
+El código trabaja en base a dos paquetes: =httr=, para acceder a la API mediante comandos =GET=; =data.table= para manipular la información, y para almacenar y leer ficheros CSV. Se pueden instalar con el gestor de paquetes de RStudio (menú situado en la ventana inferior derecha) o con código en la consola de R:
+
+=install.packages(c("httr", "data.table"))=
+
+La instalación sólo es necesaria una vez.
+
+

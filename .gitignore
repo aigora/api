@@ -1,9 +1,11 @@
 # History files
 .Rhistory
 .Rapp.history
-
+*~
 # Session Data files
 .RData
+.Renviron
+.Rprofile
 
 # Example code in package build process
 *-Ex.R
