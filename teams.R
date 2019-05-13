@@ -14,11 +14,12 @@ nTeams <- nrow(teams)
 
 nMembers <- sapply(seq_len(nTeams),
                    function(i)
-                       {
-                           res <- ghGET(paste0("/teams/",
-                                               teams[i, "id"]))
-                           res <- content(res, "parsed")
-                           res$members_count
+                   {
+                       cat(teams[i, "name"], "\n")
+                       res <- ghGET(paste0("/teams/",
+                                           teams[i, "id"]))
+                       res <- content(res, "parsed")
+                       res$members_count
                        }
                    )
                    
@@ -27,6 +28,7 @@ teams$nMembers <- nMembers
 members <- sapply(seq_len(nTeams),
                    function(i)
                    {
+                       cat(teams[i, "name"], "\n")
                        res <- getPages(paste0("/teams/",
                                               teams[i, "id"],
                                               "/members"))
