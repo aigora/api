@@ -10,6 +10,16 @@ repoNames <- teamsByRepo$repo_name
 
 twRepos <- repoNames[grepl("tw", repoNames)]
 
+## Recupera datos de ficheros locales
+commits <- lapply(twRepos, function(x)
+{
+    fread(paste0("csv/commits_", x, ".csv"))
+})
+names(commits) <- twRepos
+
+
+## -------------------------------------------------
+## Ejecutar únicamente para solicitar datos a GitHub
 commits <- lapply(twRepos, function(x)
 {
     cat(x, "\n")
@@ -25,12 +35,14 @@ commits <- lapply(twRepos, function(x)
                row.names = FALSE)
     res
 })
-
 names(commits) <- twRepos
+##------------------------------------------------------
+
 
 resumen <-  lapply(seq_along(commits), function(i)
 {
     data.frame(repo = twRepos[i],
+               grupo = substr(twRepos[i], 3, 6),
                N = nrow(commits[[i]]),
                last = as.Date(commits[[i]][1, 2][[1]]))
 })
