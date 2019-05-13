@@ -90,10 +90,9 @@ Para ejecutar el código hay que abrir el fichero deseado desde el explorador de
 *** Información en formato /Excel/
 
  El fichero [[xls.R]] condensa los principales ficheros csv indicados anteriormente, para producir un libro excel con las siguientes hojas:
- - Equipos: fichero =teamsByRepo.csv=.
+ - Resumen commits: fichero =resumen_commits.csv=.
  - E105: información de los equipos de trabajo del grupo E105, fichero =twE105.csv=.
  - E100, A104, A109, Q103: ídem.
- - Resumen commits: fichero =resumen_commits.csv=.
 
  Este fichero se graba en la carpeta temporal de la sesión. Para localizar esta carpeta hay que ejecutar en R:
 

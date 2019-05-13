@@ -9,13 +9,12 @@ twQ103 <- fread("csv/twQ103.csv")
 
 commits <- fread("csv/resumen_commits.csv")
 
-dfs <- list(teamsByRepo,
-            twE105, twE100, twA104, twA109, twQ103,
-            commits)
+dfs <- list(commits,
+            twE105, twE100, twA104, twA109, twQ103)
+            
 
-names(dfs) <- c("Equipos",
-                "E105", "E100", "A104", "A109", "Q103",
-                "Resumen commits")
+names(dfs) <- c("Resumen commits",
+                "E105", "E100", "A104", "A109", "Q103")
 
 old <- setwd(tempdir())
 write.xlsx(dfs, file = "twCommits.xlsx")
