@@ -45,6 +45,35 @@ teamsByRepo <- rbindlist(teamsByRepo)
 teamsByRepo <- merge(teamsByRepo,
                       teams[, .(name, id,
                                 nMembers, members)])
+webData <- lapply(seq_len(nRepos),
+                  function(i)
+                  {
+                    query <- ghGET(paste0("/repos/aigora/",
+                                          repos[[i]]$name,
+                                          "/contents/logo.png")) ##  Mejor con regex...
+                    if(repos[[i]][["has_wiki"]]){
+                      cad <- paste0(repos[[i]][["html_url"]],
+                                    "/wiki")
+                    }
+                    else{ 
+                      cad <- "No tiene wiki"
+                    }
+                    if(query[["status_code"]]==200){
+                      imageUrl <- query[["url"]]
+                    }
+                    else{ 
+                      imageUrl <- "No logo"
+                    }
+                    data.frame(
+                      title = nmsRep[i], 
+                      layout = "default",
+                      modal_id = i,
+                      wiki_link = cad,
+                      thumbnail = imageUrl,
+                      alt = nmsRep[i])
+                  })
+
+webData <- rbindlist(webData)
 write.csv2(teamsByRepo,
            file = "csv/teamsByRepo.csv",
            row.names = FALSE)
@@ -59,3 +88,7 @@ lapply(groups, function(group)
            file = paste0("csv/tw", group, ".csv"),
            row.names = FALSE)
 })
+
+write.csv2(webData,
+           file = "csv/webData.csv",
+           row.names = FALSE)
