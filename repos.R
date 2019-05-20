@@ -9,13 +9,16 @@ teams <- fread('csv/teams.csv')
 
 teamsByRepo <- fread("csv/teamsByRepo.csv")
 
+repos <- readRDS("csv/repos.Rds")
 ## Recupera datos de un grupo de matriculación. P.ej E105
 twE015 <- fread("csv/twE105.csv")
 
-## Sólo ejecutar para realizar una nueva consulta a GitHub
+#######################################################################
+## A partir de aquí, ejecutar para realizar una nueva consulta a GitHub
 repos <- getPages("/orgs/aigora/repos")
-nmsRep <- sapply(repos, function(x) x$name)
+saveRDS(repos, file = "csv/repos.Rds")
 
+nmsRep <- sapply(repos, function(x) x$name)
 nRepos <- length(repos)
 
 teamsByRepo <- lapply(seq_len(nRepos),
@@ -45,6 +48,24 @@ teamsByRepo <- rbindlist(teamsByRepo)
 teamsByRepo <- merge(teamsByRepo,
                       teams[, .(name, id,
                                 nMembers, members)])
+write.csv2(teamsByRepo,
+           file = "csv/teamsByRepo.csv",
+           row.names = FALSE)
+
+## Un fichero por cada grupo de matriculación
+repoNames <- teamsByRepo$repo_name
+groups <- c("E100", "E105", "Q103", "A104", "A109")
+lapply(groups, function(group)
+{
+    idx <- grep(paste0("tw", group), repoNames)
+    write.csv2(teamsByRepo[idx, ],
+           file = paste0("csv/tw", group, ".csv"),
+           row.names = FALSE)
+})
+##################################################################
+
+
+## Información de logo y wiki
 webData <- lapply(seq_len(nRepos),
                   function(i)
                   {
@@ -74,20 +95,6 @@ webData <- lapply(seq_len(nRepos),
                   })
 
 webData <- rbindlist(webData)
-write.csv2(teamsByRepo,
-           file = "csv/teamsByRepo.csv",
-           row.names = FALSE)
-
-## Un fichero por cada grupo de matriculación
-repoNames <- teamsByRepo$repo_name
-groups <- c("E100", "E105", "Q103", "A104", "A109")
-lapply(groups, function(group)
-{
-    idx <- grep(paste0("tw", group), repoNames)
-    write.csv2(teamsByRepo[idx, ],
-           file = paste0("csv/tw", group, ".csv"),
-           row.names = FALSE)
-})
 
 write.csv2(webData,
            file = "csv/webData.csv",
