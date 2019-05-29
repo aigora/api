@@ -1,0 +1,8 @@
+---
+title: clininca
+layout: default
+modal-id: 6
+wiki-link: https://github.com/aigora/twQ103-clininca/wiki
+thumbnail: https://raw.githubusercontent.com/aigora/twQ103-clininca/master/logo.png
+alt: twQ103-clininca
+---

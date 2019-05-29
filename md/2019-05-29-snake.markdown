@@ -1,0 +1,8 @@
+---
+title: snake
+layout: default
+modal-id: 143
+wiki-link: https://github.com/aigora/twA104-snake/wiki
+thumbnail: 
+alt: twA104-snake
+---

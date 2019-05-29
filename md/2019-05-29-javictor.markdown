@@ -1,0 +1,8 @@
+---
+title: javictor
+layout: default
+modal-id: 126
+wiki-link: https://github.com/aigora/twA104-javictor/wiki
+thumbnail: 
+alt: twA104-javictor
+---

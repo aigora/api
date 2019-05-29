@@ -58,13 +58,17 @@ write.csv2(webData,
 ##################################################################
 webData <- read.csv2("csv/webData.csv")
 
+
 lapply(seq_len(nrow(webData)),
        function(i)
        {
            vals <- webData[i,]
+           title <- substring(vals$title, 8)
+           fich <- paste(Sys.Date(), title,
+                         sep = '-')
            writeLines(paste(
                "---",
-               paste("title:", vals$title),
+               paste("title:", title),
                "layout: default",
                paste("modal-id:", i),
                paste("wiki-link:", vals$wiki_link),
@@ -72,5 +76,6 @@ lapply(seq_len(nrow(webData)),
                paste("alt:", vals$alt),
                "---",
                sep = "\n"),
-               con = paste0("md/", i, ".markdown"))
+               con = paste0("md/", fich, ".markdown"))
            })
+

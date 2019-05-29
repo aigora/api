@@ -1,0 +1,8 @@
+---
+title: nba-goats
+layout: default
+modal-id: 4
+wiki-link: https://github.com/aigora/twQ103-nba-goats/wiki
+thumbnail: https://raw.githubusercontent.com/aigora/twQ103-nba-goats/master/logo.png
+alt: twQ103-nba-goats
+---

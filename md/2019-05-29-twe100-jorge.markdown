@@ -1,0 +1,8 @@
+---
+title: twe100-jorge
+layout: default
+modal-id: 56
+wiki-link: https://github.com/aigora/twE100-twe100-jorge/wiki
+thumbnail: https://raw.githubusercontent.com/aigora/twE100-twe100-jorge/master/logo.png
+alt: twE100-twe100-jorge
+---

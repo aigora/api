@@ -1,0 +1,8 @@
+---
+title: parkineo
+layout: default
+modal-id: 85
+wiki-link: https://github.com/aigora/twA109-parkineo/wiki
+thumbnail: 
+alt: twA109-parkineo
+---

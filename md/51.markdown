@@ -1,8 +1,0 @@
----
-title: twE100-team-mid
-layout: default
-modal-id: 51
-wiki-link: https://github.com/aigora/twE100-team-mid/wiki
-thumbnail: 
-alt: twE100-team-mid
----

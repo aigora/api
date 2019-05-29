@@ -1,0 +1,8 @@
+---
+title: Barcos
+layout: default
+modal-id: 142
+wiki-link: https://github.com/aigora/twA104-Barcos/wiki
+thumbnail: 
+alt: twA104-Barcos
+---

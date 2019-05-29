@@ -1,0 +1,8 @@
+---
+title: kchopos-s
+layout: default
+modal-id: 47
+wiki-link: https://github.com/aigora/twE105-kchopos-s/wiki
+thumbnail: https://raw.githubusercontent.com/aigora/twE105-kchopos-s/master/LOGO.PNG
+alt: twE105-kchopos-s
+---

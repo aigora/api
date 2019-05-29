@@ -1,0 +1,8 @@
+---
+title: tiendasl
+layout: default
+modal-id: 63
+wiki-link: https://github.com/aigora/twE100-tiendasl/wiki
+thumbnail: https://raw.githubusercontent.com/aigora/twE100-tiendasl/master/logo.png
+alt: twE100-tiendasl
+---

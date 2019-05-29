@@ -1,8 +1,0 @@
----
-title: twQ103-becas-mel
-layout: default
-modal-id: 41
-wiki-link: https://github.com/aigora/twQ103-becas-mel/wiki
-thumbnail: 
-alt: twQ103-becas-mel
----

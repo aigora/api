@@ -1,0 +1,8 @@
+---
+title: e-shop
+layout: default
+modal-id: 23
+wiki-link: https://github.com/aigora/twE105-e-shop/wiki
+thumbnail: 
+alt: twE105-e-shop
+---

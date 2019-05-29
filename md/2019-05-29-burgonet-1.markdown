@@ -1,0 +1,8 @@
+---
+title: burgonet-1
+layout: default
+modal-id: 72
+wiki-link: https://github.com/aigora/twQ103-burgonet-1/wiki
+thumbnail: https://raw.githubusercontent.com/aigora/twQ103-burgonet-1/master/logo.png
+alt: twQ103-burgonet-1
+---

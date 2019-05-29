@@ -1,0 +1,8 @@
+---
+title: euroliga
+layout: default
+modal-id: 42
+wiki-link: https://github.com/aigora/twQ103-euroliga/wiki
+thumbnail: 
+alt: twQ103-euroliga
+---

@@ -1,8 +1,0 @@
----
-title: twA104-morse_av
-layout: default
-modal-id: 148
-wiki-link: https://github.com/aigora/twA104-morse_av/wiki
-thumbnail: 
-alt: twA104-morse_av
----

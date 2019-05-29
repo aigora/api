@@ -1,0 +1,8 @@
+---
+title: trivial
+layout: default
+modal-id: 90
+wiki-link: https://github.com/aigora/twQ103-trivial/wiki
+thumbnail: https://raw.githubusercontent.com/aigora/twQ103-trivial/master/logo.png
+alt: twQ103-trivial
+---

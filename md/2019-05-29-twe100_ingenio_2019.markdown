@@ -1,0 +1,8 @@
+---
+title: twe100_ingenio_2019
+layout: default
+modal-id: 60
+wiki-link: https://github.com/aigora/twE100-twe100_ingenio_2019/wiki
+thumbnail: 
+alt: twE100-twe100_ingenio_2019
+---

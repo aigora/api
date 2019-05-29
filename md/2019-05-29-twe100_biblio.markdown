@@ -1,0 +1,8 @@
+---
+title: twe100_biblio
+layout: default
+modal-id: 116
+wiki-link: https://github.com/aigora/twE100-twe100_biblio/wiki
+thumbnail: 
+alt: twE100-twe100_biblio
+---
