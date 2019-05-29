@@ -23,10 +23,10 @@ names(commits) <- twRepos
 commits <- lapply(twRepos, function(x)
 {
     cat(x, "\n")
-    vals <- ghGET(paste0("/repos/aigora/",
+    parsed <- getPages(paste0("/repos/aigora/",
                          x,
                          "/commits"))
-    parsed <- content(vals, "parsed")
+    
     author <- lapply(parsed, function(x)
         x$commit$author[c("name", "date")])
     res <- do.call(rbind, author)
