@@ -11,7 +11,7 @@ teamsByRepo <- fread("csv/teamsByRepo.csv")
 
 repos <- readRDS("csv/repos.Rds")
 ## Recupera datos de un grupo de matriculación. P.ej E105
-twE015 <- fread("csv/twE105.csv")
+twE105 <- fread("csv/twE105.csv")
 
 #######################################################################
 ## A partir de aquí, ejecutar para realizar una nueva consulta a GitHub
