@@ -30,7 +30,7 @@ logo <- lapply(contents, function(x)
     if (length(logo) == 0)
         ""
     else
-        logo
+        logo[1]
 })
 logo <- do.call(c, logo)   
 
