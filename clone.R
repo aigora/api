@@ -1,15 +1,15 @@
 source("API.R")
 
-twE105 <- fread("csv/twE105.csv")
-reposE105 <- twE105$repo_name
+teamsByRepo <- fread("csv/teamsByRepo.csv")
+repoNames <- teamsByRepo$repo_name
+idx <- grep("tw", repoNames)
+twRepos <- repoNames[idx]
 
 mainURL <- "https://github.com/aigora/"
-
-reposURL <- paste0(mainURL, reposE105, ".git")
+reposURL <- paste0(mainURL, twRepos, ".git")
 
 old <- setwd(tempdir())
-lapply(reposURL,
-       function(x)
-           system2("git", c("clone", x))
-       )
+lapply(reposURL, function(x)
+    system2("git", c("clone", x)))
 setwd(old)
+
