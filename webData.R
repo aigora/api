@@ -53,3 +53,24 @@ webData <- data.frame(
 write.csv2(webData,
            file = "csv/webData.csv",
            row.names = FALSE)
+##################################################################
+## Genera ficheros markdown
+##################################################################
+webData <- read.csv2("csv/webData.csv")
+
+lapply(seq_len(nrow(webData)),
+       function(i)
+       {
+           vals <- webData[i,]
+           writeLines(paste(
+               "---",
+               paste("title:", vals$title),
+               "layout: default",
+               paste("modal-id:", i),
+               paste("wiki-link:", vals$wiki_link),
+               paste("thumbnail:", vals$thumbnail),
+               paste("alt:", vals$alt),
+               "---",
+               sep = "\n"),
+               con = paste0("md/", i, ".markdown"))
+           })
