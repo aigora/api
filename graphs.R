@@ -24,7 +24,11 @@ commits <- lapply(twRepos, function(x)
     vals
 })
 commits <- do.call(rbind, commits)
-commits <- commits[name != "Oscar Perpiñán Lamigueiro"]
+commits <- commits[!(name %in%
+                     c("Juliauru",
+                       "MPerezMateo",
+                       "Oscar Perpiñán Lamigueiro")
+)]
 commits$date <- as.POSIXct(commits$date, format = "%Y-%m-%dT%H:%M:%SZ")
 commits <- commits[order(date)]
 
@@ -77,7 +81,9 @@ commitsUser <- commits[,
                        ]
 
 trellis.device(pdf, file = "figs/Histograma_Commits_Usuarios.pdf")
-histogram(~ N, data = commitsUser, nint = 50,
+limits <- quantile(commitsUser$N, c(0, 0.99))
+histogram(~ N, data = commitsUser, xlim = limits,
+          nint = 40,
           xlab = "Número de commits por usuario",
           ylab = "Porcentaje del total de usuarios")
 dev.off()
@@ -89,7 +95,10 @@ commitsGroup <- commits[,
                         ]
 
 trellis.device(pdf, file = "figs/Histograma_Commits_Grupos.pdf")
-histogram(~ N, data = commitsGroup, nint = 50,
+limits <- quantile(commitsGroup$N, c(0, 0.95))
+histogram(~ N, data = commitsGroup,
+          xlim = limits,
+          nint = 45,
           xlab = "Número de commits por grupo",
           ylab = "Porcentaje del total de grupos")
 dev.off()
