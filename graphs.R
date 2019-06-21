@@ -80,7 +80,7 @@ commitsUser <- commits[,
                        by = name
                        ]
 
-trellis.device(pdf, file = "figs/Histograma_Commits_Usuarios.pdf")
+trellis.device(png, file = "figs/Histograma_Commits_Usuarios.png", width = 2000, height = 2000, res = 300)
 limits <- quantile(commitsUser$N, c(0, 0.99))
 histogram(~ N, data = commitsUser, xlim = limits,
           nint = 40,
@@ -94,7 +94,7 @@ commitsGroup <- commits[,
                         by = group
                         ]
 
-trellis.device(pdf, file = "figs/Histograma_Commits_Grupos.pdf")
+trellis.device(png, file = "figs/Histograma_Commits_Grupos.png", width = 2000, height = 2000, res = 300)
 limits <- quantile(commitsGroup$N, c(0, 0.95))
 histogram(~ N, data = commitsGroup,
           xlim = limits,
@@ -123,23 +123,23 @@ metricasGrupo <- commitsUserGroup[,
                                  by = group
                                  ]
 
-trellis.device(pdf, file = "figs/Histograma_Rango.pdf")
+trellis.device(png, file = "figs/Histograma_Rango.png", width = 2000, height = 2000, res = 300)
 histogram(~ range, data = metricasGrupo, nint = 20,
           xlab = "Rango normalizado", ylab = "Porcentaje")
 dev.off()
 
-trellis.device(pdf, file = "figs/Histograma_Rango_Profesor.pdf")
+trellis.device(png, file = "figs/Histograma_Rango_Profesor.png", width = 2000, height = 2000, res = 300)
 histogram(~ range|profe, data = metricasGrupo,
           layout = c(5, 1),
           xlab = "Rango normalizado", ylab = "Porcentaje")
 dev.off()
 
-trellis.device(pdf, file = "figs/Histograma_Max.pdf")
+trellis.device(png, file = "figs/Histograma_Max.png", width = 2000, height = 2000, res = 300)
 histogram(~ max, data = metricasGrupo, nint = 20,
           xlab = "Máximo normalizado", ylab = "Porcentaje")
 dev.off()
 
-trellis.device(pdf, file = "figs/Histograma_Max_Profesor.pdf")
+trellis.device(png, file = "figs/Histograma_Max_Profesor.png", width = 2000, height = 2000, res = 300)
 histogram(~ max|profe, data = metricasGrupo,
           layout = c(5, 1),
           xlab = "Máximo normalizado", ylab = "Porcentaje")
