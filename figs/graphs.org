@@ -1,0 +1,15 @@
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="graphs.css" />
+
+[[file:Histograma_Commits_Grupos.png]]
+
+file:Histograma_Commits_Usuarios.png
+
+file:Histograma_Max.png
+
+file:Histograma_Max_Profesor.png
+
+file:Histograma_Rango.png
+
+file:Histograma_Rango_Profesor.png
+
+[[file:streamgraph_commits.html][file:streamgraph_commits_ts.png]]
