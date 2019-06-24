@@ -146,8 +146,17 @@ histogram(~ max|profe, data = metricasGrupo,
 dev.off()
 
 
+##################################################################
+## Encuestas
+##################################################################
+encuestas <- read.csv("csv/encuesta_estudiantes.csv")
 
-
+trellis.device(png, file = "figs/encuestas_estudiantes.png", width = 2000, height = 2000, res = 300)
+histogram(~ P1 + P2 + P3 + P4, data = encuestas,
+          layout = c(4, 1),
+          xlab = "Valoraciones", ylab = "Porcentaje") +
+    layer(panel.abline(v = 5, col = 'red'))
+dev.off()
 
 
 
