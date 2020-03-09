@@ -10,7 +10,6 @@ teams <- fread('csv/teams.csv')
 ## Sólo ejecutar para enviar una nueva consulta a GitHub
 teams <- getPages("/orgs/aigora/teams", simplify = TRUE)
 
-nTeams <- nrow(teams)
 
 nMembers <- sapply(seq_len(nTeams),
                    function(i)
@@ -22,8 +21,13 @@ nMembers <- sapply(seq_len(nTeams),
                        res$members_count
                        }
                    )
-                   
+
+
 teams$nMembers <- nMembers
+## Elimina equipos de cursos anteriores (sin integrantes)
+teams <- teams[nMembers > 0]
+
+nTeams <- nrow(teams)
 
 members <- sapply(seq_len(nTeams),
                    function(i)
