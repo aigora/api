@@ -10,8 +10,7 @@ teams <- fread('csv/teams.csv')
 ## Sólo ejecutar para enviar una nueva consulta a GitHub
 teams <- getPages("/orgs/aigora/teams", simplify = TRUE)
 
-
-nMembers <- sapply(seq_len(nTeams),
+nMembers <- sapply(seq_len(nrow(teams)),
                    function(i)
                    {
                        cat(teams[i,]$name, "\n")
