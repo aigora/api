@@ -6,59 +6,62 @@ source('API.R')
 
 ## Recupera consulta previa
 teams <- fread('csv/teams.csv')
+nTeams <- nrow(teams)
 
-teamsByRepo <- fread("csv/teamsByRepo.csv")
+reposByTeams <- fread("csv/reposByTeams.csv")
 
-repos <- readRDS("csv/repos.Rds")
-## Recupera datos de un grupo de matriculación. P.ej E105
-twE105 <- fread("csv/twE105.csv")
+## Recupera datos de un grupo de matriculación. P.ej IE
+twIE <- fread("csv/twIE.csv")
 
 #######################################################################
 ## A partir de aquí, ejecutar para realizar una nueva consulta a GitHub
-repos <- getPages("/orgs/aigora/repos")
-saveRDS(repos, file = "csv/repos.Rds")
+reposByTeams <- lapply(seq_len(nTeams),
+                       function(i)
+                       {
+                           team <- teams[i,]
+                           repo <- ghGET(paste0("/orgs/aigora/teams/",
+                                                team$slug, "/repos"))
+                           repo <- content(repo, "parsed")
+                           if (length(repo) > 0)
+                           {
+                               repo <- repo[[1]]
+                               data.frame(
+                                   name = team$name,
+                                   slug = team$slug,
+                                   id = team$id,
+                                   nMembers = team$nMembers,
+                                   members = team$members,
+                                   repo_name = repo$name,
+                                   url = repo$html_url)
 
-nmsRep <- sapply(repos, function(x) x$name)
-nRepos <- length(repos)
+                           }
+                           else
+                           {
+                                   data.frame(
+                                       name = team$name,
+                                       slug = team$slug,
+                                       id = team$id,
+                                       nMembers = team$nMembers,
+                                       members = team$members,
+                                       repo_name = NA,
+                                       url = NA)
+                           }
+                       })
 
-teamsByRepo <- lapply(seq_len(nRepos),
-                      function(i)
-                      {
-                          repo <- repos[[i]]
-                          team <- ghGET(paste0("/repos/aigora/",
-                                               repo$name,
-                                               "/teams"))
-                          team <- content(team, "parsed")
-                          if (length(team) > 0)
-                          {
-                              res <- rbindlist(team)
-                              res[, .(repo_name = repo$name,
-                                      name, slug, id)]
-                          }
-                          else
-                              data.frame(
-                                  repo_name = nmsRep[i],
-                                  name = NA,
-                                  slug = NA,
-                                  id = NA)
-                      })   
-teamsByRepo <- rbindlist(teamsByRepo)
 
-## Añade información de integrantes de cada equipo
-teamsByRepo <- merge(teamsByRepo,
-                      teams[, .(name, id,
-                                nMembers, members)])
-write.csv2(teamsByRepo,
-           file = "csv/teamsByRepo.csv",
+reposByTeams <- rbindlist(reposByTeams)
+
+write.csv2(reposByTeams,
+           file = "csv/reposByTeams.csv",
            row.names = FALSE)
 
-## Un fichero por cada grupo de matriculación
-repoNames <- teamsByRepo$repo_name
-groups <- c("E100", "E105", "Q103", "A104", "A109")
+## Un fichero por cada grado
+repoNames <- reposByTeams$repo_name
+groups <- c("IE", "IA", "IQ")
 lapply(groups, function(group)
 {
     idx <- grep(paste0("tw", group), repoNames)
-    write.csv2(teamsByRepo[idx, ],
+    write.csv2(reposByTeams[idx, ],
            file = paste0("csv/tw", group, ".csv"),
            row.names = FALSE)
 })

@@ -62,18 +62,19 @@ Para ejecutar el código hay que abrir el fichero deseado desde el explorador de
 
 *** Información de Repositorios
 
- El fichero [[repos.R]] genera el fichero [[csv/teamsByRepo.csv]]. Este fichero incluye los repositorios a los que cada equipo tiene acceso.
+ El fichero [[repos.R]] genera el fichero [[csv/reposByTeams.csv]]. Este fichero incluye los repositorios a los que cada equipo tiene acceso.
 
  Consta de 6 columnas: 
 
  - =name=: nombre del equipo.
- - =id=: código numérico de identificación del equipo.
- - =repo_name=: identificador alfanumérico del repositorio.
  - =slug=: identificador alfanumérico del equipo.
+ - =id=: código numérico de identificación del equipo.
  - =nMembers=: número de integrantes.
  - =members=: lista separada por comas de los integrantes del equipo.
+ - =repo_name=: identificador alfanumérico del repositorio.
+ - =url=: URL del repositorio.
 
- A partir de esta información genera un fichero csv por cada grupo de matriculación incluyendo únicamente la información relativa a los equipos de trabajo que pertenecen a ese grupo de matriculación: [[csv/twE100.csv]], [[csv/twE105.csv]], [[csv/twQ103.csv]], [[csv/twA104.csv]], [[csv/twA109.csv]].
+ A partir de esta información genera un fichero csv por cada grupo de matriculación incluyendo únicamente la información relativa a los equipos de trabajo que pertenecen a ese grupo de matriculación: [[csv/twIE.csv]], [[csv/twIA.csv]], [[csv/twIQ.csv]].
 
 *** Información de /commits/ en repositorios
 
