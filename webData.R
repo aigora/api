@@ -1,11 +1,20 @@
 source('API.R')
 
+## Modifica al curso actual
+curso <- "1920"
+
 ##################################################################
 ## Recupera consulta previa
 repos <- readRDS("csv/repos.Rds")
 repoNames <- sapply(repos, function(x) x$name)
+
+## Filtro los que corresonden a un trabajo
 idxTW <- grepl("tw", repoNames)
 twRepos <- repos[idxTW]
+twNames <- sapply(twRepos, function(x) x$name)
+## Y me quedo con el curso actual...
+idxCurso <- grepl(curso, twNames)
+twRepos <- twRepos[idxCurso]
 twNames <- sapply(twRepos, function(x) x$name)
 
 ## Tienen wiki?
@@ -51,12 +60,13 @@ webData <- data.frame(
 
 
 write.csv2(webData,
-           file = "csv/webData.csv",
+           file = paste0("csv/webData", curso, ".csv"),
            row.names = FALSE)
+
 ##################################################################
 ## Genera ficheros markdown
 ##################################################################
-webData <- read.csv2("csv/webData.csv")
+webData <- read.csv2(paste0("csv/webData", curso, ".csv"))
 
 
 lapply(seq_len(nrow(webData)),

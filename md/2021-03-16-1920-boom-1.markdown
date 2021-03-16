@@ -1,0 +1,8 @@
+---
+title: 1920-boom-1
+layout: default
+modal-id: 85
+wiki-link: https://github.com/aigora/twE105_1920-boom-1/wiki
+thumbnail: https://raw.githubusercontent.com/aigora/twE105_1920-boom-1/master/logo.png
+alt: twE105_1920-boom-1
+---

@@ -1,0 +1,8 @@
+---
+title: 1920-persiana
+layout: default
+modal-id: 96
+wiki-link: https://github.com/aigora/twA109_1920-persiana/wiki
+thumbnail: 
+alt: twA109_1920-persiana
+---

@@ -1,0 +1,8 @@
+---
+title: 1920-pong
+layout: default
+modal-id: 87
+wiki-link: https://github.com/aigora/twA109_1920-pong/wiki
+thumbnail: 
+alt: twA109_1920-pong
+---

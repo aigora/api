@@ -1,0 +1,8 @@
+---
+title: 1920-check_in_time
+layout: default
+modal-id: 50
+wiki-link: https://github.com/aigora/twE105_1920-check_in_time/wiki
+thumbnail: https://raw.githubusercontent.com/aigora/twE105_1920-check_in_time/master/logo.png
+alt: twE105_1920-check_in_time
+---

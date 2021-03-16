@@ -1,0 +1,8 @@
+---
+title: 1920-infracciones
+layout: default
+modal-id: 97
+wiki-link: https://github.com/aigora/twE100_1920-infracciones/wiki
+thumbnail: 
+alt: twE100_1920-infracciones
+---

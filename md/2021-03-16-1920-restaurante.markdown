@@ -1,0 +1,8 @@
+---
+title: 1920-restaurante
+layout: default
+modal-id: 26
+wiki-link: https://github.com/aigora/twQ103_1920-restaurante/wiki
+thumbnail: https://raw.githubusercontent.com/aigora/twQ103_1920-restaurante/master/logo.png
+alt: twQ103_1920-restaurante
+---

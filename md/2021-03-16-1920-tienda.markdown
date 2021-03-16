@@ -1,0 +1,8 @@
+---
+title: 1920-tienda
+layout: default
+modal-id: 103
+wiki-link: https://github.com/aigora/twE100_1920-tienda/wiki
+thumbnail: 
+alt: twE100_1920-tienda
+---

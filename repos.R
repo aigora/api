@@ -15,6 +15,15 @@ twIE <- fread("csv/twIE.csv")
 
 #######################################################################
 ## A partir de aquí, ejecutar para realizar una nueva consulta a GitHub
+##################################################################
+
+## Obtenemos información de *todos* los repositorios
+repos <- getPages("/orgs/aigora/repos")
+nmsRep <- sapply(repos, function(x) x$name)
+saveRDS(repos, file = "csv/repos.Rds")
+
+
+## Ahora recorremos los equipos del curso actual y descargamos información de ese repositorio
 reposByTeams <- lapply(seq_len(nTeams),
                        function(i)
                        {

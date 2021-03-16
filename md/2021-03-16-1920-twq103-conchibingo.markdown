@@ -1,0 +1,8 @@
+---
+title: 1920-twq103-conchibingo
+layout: default
+modal-id: 43
+wiki-link: https://github.com/aigora/twQ103_1920-twq103-conchibingo/wiki
+thumbnail: https://raw.githubusercontent.com/aigora/twQ103_1920-twq103-conchibingo/master/logo.png
+alt: twQ103_1920-twq103-conchibingo
+---

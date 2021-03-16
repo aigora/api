@@ -1,0 +1,8 @@
+---
+title: 1920-card
+layout: default
+modal-id: 102
+wiki-link: https://github.com/aigora/twE100_1920-card/wiki
+thumbnail: 
+alt: twE100_1920-card
+---

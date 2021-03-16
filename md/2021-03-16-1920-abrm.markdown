@@ -1,0 +1,8 @@
+---
+title: 1920-abrm
+layout: default
+modal-id: 105
+wiki-link: https://github.com/aigora/twE100_1920-abrm/wiki
+thumbnail: 
+alt: twE100_1920-abrm
+---

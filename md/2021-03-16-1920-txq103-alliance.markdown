@@ -1,0 +1,8 @@
+---
+title: 1920-txq103-alliance
+layout: default
+modal-id: 39
+wiki-link: https://github.com/aigora/twQ103_1920-txq103-alliance/wiki
+thumbnail: https://raw.githubusercontent.com/aigora/twQ103_1920-txq103-alliance/master/logo.png
+alt: twQ103_1920-txq103-alliance
+---

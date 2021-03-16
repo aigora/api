@@ -1,0 +1,8 @@
+---
+title: 1920-excavadora
+layout: default
+modal-id: 69
+wiki-link: https://github.com/aigora/twA109_1920-excavadora/wiki
+thumbnail: 
+alt: twA109_1920-excavadora
+---

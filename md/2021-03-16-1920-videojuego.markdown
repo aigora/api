@@ -1,0 +1,8 @@
+---
+title: 1920-videojuego
+layout: default
+modal-id: 52
+wiki-link: https://github.com/aigora/twA109_1920-videojuego/wiki
+thumbnail: 
+alt: twA109_1920-videojuego
+---

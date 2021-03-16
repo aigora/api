@@ -1,0 +1,8 @@
+---
+title: 1920-tensor
+layout: default
+modal-id: 62
+wiki-link: https://github.com/aigora/twA109_1920-tensor/wiki
+thumbnail: 
+alt: twA109_1920-tensor
+---

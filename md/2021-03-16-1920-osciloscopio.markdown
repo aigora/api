@@ -1,0 +1,8 @@
+---
+title: 1920-osciloscopio
+layout: default
+modal-id: 77
+wiki-link: https://github.com/aigora/twA109_1920-osciloscopio/wiki
+thumbnail: 
+alt: twA109_1920-osciloscopio
+---

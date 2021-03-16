@@ -1,0 +1,8 @@
+---
+title: 1920-almacen
+layout: default
+modal-id: 100
+wiki-link: https://github.com/aigora/twE100_1920-almacen/wiki
+thumbnail: 
+alt: twE100_1920-almacen
+---

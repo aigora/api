@@ -1,0 +1,8 @@
+---
+title: 1920-guante
+layout: default
+modal-id: 11
+wiki-link: https://github.com/aigora/twA109_1920-guante/wiki
+thumbnail: 
+alt: twA109_1920-guante
+---

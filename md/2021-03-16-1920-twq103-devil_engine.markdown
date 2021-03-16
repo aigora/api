@@ -1,0 +1,8 @@
+---
+title: 1920-twq103-devil_engine
+layout: default
+modal-id: 36
+wiki-link: https://github.com/aigora/twQ103_1920-twq103-devil_engine/wiki
+thumbnail: https://raw.githubusercontent.com/aigora/twQ103_1920-twq103-devil_engine/master/Logo.png
+alt: twQ103_1920-twq103-devil_engine
+---

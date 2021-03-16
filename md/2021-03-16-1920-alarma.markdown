@@ -1,0 +1,8 @@
+---
+title: 1920-alarma
+layout: default
+modal-id: 59
+wiki-link: https://github.com/aigora/twA109_1920-alarma/wiki
+thumbnail: 
+alt: twA109_1920-alarma
+---

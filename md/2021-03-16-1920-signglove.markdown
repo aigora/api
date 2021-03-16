@@ -1,0 +1,8 @@
+---
+title: 1920-signglove
+layout: default
+modal-id: 14
+wiki-link: https://github.com/aigora/twA109_1920-signglove/wiki
+thumbnail: 
+alt: twA109_1920-signglove
+---

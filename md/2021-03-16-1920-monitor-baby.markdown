@@ -1,0 +1,8 @@
+---
+title: 1920-monitor-baby
+layout: default
+modal-id: 56
+wiki-link: https://github.com/aigora/twA109_1920-monitor-baby/wiki
+thumbnail: 
+alt: twA109_1920-monitor-baby
+---

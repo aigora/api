@@ -1,0 +1,8 @@
+---
+title: 1920-isemaforo
+layout: default
+modal-id: 58
+wiki-link: https://github.com/aigora/twA109_1920-isemaforo/wiki
+thumbnail: 
+alt: twA109_1920-isemaforo
+---

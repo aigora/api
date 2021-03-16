@@ -1,0 +1,8 @@
+---
+title: 1920-los_chispas
+layout: default
+modal-id: 12
+wiki-link: https://github.com/aigora/twE105_1920-los_chispas/wiki
+thumbnail: https://raw.githubusercontent.com/aigora/twE105_1920-los_chispas/master/logo.png
+alt: twE105_1920-los_chispas
+---

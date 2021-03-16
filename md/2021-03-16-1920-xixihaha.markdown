@@ -1,0 +1,8 @@
+---
+title: 1920-xixihaha
+layout: default
+modal-id: 10
+wiki-link: https://github.com/aigora/twA109_1920-xixihaha/wiki
+thumbnail: 
+alt: twA109_1920-xixihaha
+---

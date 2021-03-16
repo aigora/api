@@ -1,0 +1,8 @@
+---
+title: 1920-bombilla
+layout: default
+modal-id: 17
+wiki-link: https://github.com/aigora/twA109_1920-bombilla/wiki
+thumbnail: 
+alt: twA109_1920-bombilla
+---

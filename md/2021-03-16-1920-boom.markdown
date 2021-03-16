@@ -1,0 +1,8 @@
+---
+title: 1920-boom
+layout: default
+modal-id: 3
+wiki-link: https://github.com/aigora/twA109_1920-boom/wiki
+thumbnail: 
+alt: twA109_1920-boom
+---

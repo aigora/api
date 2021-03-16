@@ -1,0 +1,8 @@
+---
+title: 1920-retorno-a-base
+layout: default
+modal-id: 109
+wiki-link: https://github.com/aigora/twA109_1920-retorno-a-base/wiki
+thumbnail: 
+alt: twA109_1920-retorno-a-base
+---

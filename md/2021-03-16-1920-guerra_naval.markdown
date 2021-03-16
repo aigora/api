@@ -1,0 +1,8 @@
+---
+title: 1920-guerra_naval
+layout: default
+modal-id: 76
+wiki-link: https://github.com/aigora/twE105_1920-guerra_naval/wiki
+thumbnail: https://raw.githubusercontent.com/aigora/twE105_1920-guerra_naval/master/Logo.png
+alt: twE105_1920-guerra_naval
+---

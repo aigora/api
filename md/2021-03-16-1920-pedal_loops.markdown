@@ -1,0 +1,8 @@
+---
+title: 1920-pedal_loops
+layout: default
+modal-id: 65
+wiki-link: https://github.com/aigora/twA109_1920-pedal_loops/wiki
+thumbnail: 
+alt: twA109_1920-pedal_loops
+---

@@ -1,0 +1,8 @@
+---
+title: 1920-losalex
+layout: default
+modal-id: 94
+wiki-link: https://github.com/aigora/twQ103_1920-losalex/wiki
+thumbnail: https://raw.githubusercontent.com/aigora/twQ103_1920-losalex/master/logo.png
+alt: twQ103_1920-losalex
+---

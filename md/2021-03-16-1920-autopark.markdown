@@ -1,0 +1,8 @@
+---
+title: 1920-autopark
+layout: default
+modal-id: 8
+wiki-link: https://github.com/aigora/twA109_1920-autopark/wiki
+thumbnail: 
+alt: twA109_1920-autopark
+---

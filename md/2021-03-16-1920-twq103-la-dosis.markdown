@@ -1,0 +1,8 @@
+---
+title: 1920-twq103-la-dosis
+layout: default
+modal-id: 44
+wiki-link: https://github.com/aigora/twQ103_1920-twq103-la-dosis/wiki
+thumbnail: https://raw.githubusercontent.com/aigora/twQ103_1920-twq103-la-dosis/master/logo.png
+alt: twQ103_1920-twq103-la-dosis
+---

@@ -1,0 +1,8 @@
+---
+title: 1920-pianomatic
+layout: default
+modal-id: 2
+wiki-link: https://github.com/aigora/twA109_1920-pianomatic/wiki
+thumbnail: 
+alt: twA109_1920-pianomatic
+---

@@ -1,0 +1,8 @@
+---
+title: 1920-stars
+layout: default
+modal-id: 91
+wiki-link: https://github.com/aigora/twQ103_1920-stars/wiki
+thumbnail: https://raw.githubusercontent.com/aigora/twQ103_1920-stars/master/logo.png
+alt: twQ103_1920-stars
+---

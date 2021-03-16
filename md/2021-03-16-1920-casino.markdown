@@ -1,0 +1,8 @@
+---
+title: 1920-casino
+layout: default
+modal-id: 110
+wiki-link: https://github.com/aigora/twE100_1920-casino/wiki
+thumbnail: 
+alt: twE100_1920-casino
+---

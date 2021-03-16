@@ -1,0 +1,8 @@
+---
+title: 1920-los_otros
+layout: default
+modal-id: 16
+wiki-link: https://github.com/aigora/twE105_1920-los_otros/wiki
+thumbnail: https://raw.githubusercontent.com/aigora/twE105_1920-los_otros/master/logo.png
+alt: twE105_1920-los_otros
+---

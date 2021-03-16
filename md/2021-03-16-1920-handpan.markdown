@@ -1,0 +1,8 @@
+---
+title: 1920-handpan
+layout: default
+modal-id: 71
+wiki-link: https://github.com/aigora/twA109_1920-handpan/wiki
+thumbnail: 
+alt: twA109_1920-handpan
+---

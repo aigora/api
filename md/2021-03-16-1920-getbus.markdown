@@ -1,0 +1,8 @@
+---
+title: 1920-getbus
+layout: default
+modal-id: 1
+wiki-link: https://github.com/aigora/twE105_1920-getbus/wiki
+thumbnail: https://raw.githubusercontent.com/aigora/twE105_1920-getbus/master/logo.png
+alt: twE105_1920-getbus
+---
