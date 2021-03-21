@@ -1,0 +1,20 @@
+# DADO MENTIROSO
+
+Realizaremos un código con el cual una persona jugará con una IA al juego del dado mentiroso.
+
+## Integrantes del equipo
+
+ 1-Sergio Díaz-Maroto Lara -- SrGnar -----------> https://github.com/SrGnar  
+ 
+ 2-Rubén Castro Lancha ------ rubencasstro ----> https://github.com/rubencasstro      
+ 
+ 3-Christian Alva Sarmiento - Christian7600 ----> https://github.com/Christian7600
+
+## Objetivos del trabajo
+
+ 1-Realizar el código con el que podrá jugar una persona vs una IA a dicho juego.  
+ 
+ 2-Realizar una especie de "Ranking" almacenando las puntuaciones de los jugadores.
+ 
+ 3-Pasar a retocar y decorar de forma más visual el juego una vez haber hecho funcionar el código. (Esto se realizara si disponemos de tiempo)
+ 

@@ -28,6 +28,8 @@ reposByTeams <- lapply(seq_len(nTeams),
                        function(i)
                        {
                            team <- teams[i,]
+                           cat(teams[i,]$name, "\n")
+
                            repo <- ghGET(paste0("/orgs/aigora/teams/",
                                                 team$slug, "/repos"))
                            repo <- content(repo, "parsed")
@@ -75,5 +77,38 @@ lapply(groups, function(group)
            row.names = FALSE)
 })
 ##################################################################
+## Obtiene README de cada repositorio
+##################################################################
+idxTW <- grep("tw", repoNames)
+twRepos <- reposByTeams[idxTW,]
 
+## Descarga README de cada repositorio y lo graba en carpeta MD
+lapply(twRepos$repo_name, function(x)
+{
+    cat(x, "\n")
+    readmeURL <- paste0("https://raw.githubusercontent.com/aigora/",
+                        x,
+                        "/master/README.md")
+    try(download.file(readmeURL, paste0("md/README_", x, ".md")))
+})
+
+## Lee los ficheros descargados y genera un fichero MD global por grupo de matriculación
+
+lapply(groups, function(group)
+{
+    idx <- grep(group, twRepos$repo_name)
+    README <- lapply(idx, function(i)
+    {
+        repo <- twRepos$repo_name[i]
+        fich <- paste0("md/README_", repo, ".md")
+        content <- NULL
+        content <- try(readLines(fich))
+        if (!is.null(content))
+            content[1] <- paste(content[1], "::", repo)
+        content <- paste(content, collapse = "\n")
+    })
+    README <- paste(README, collapse = "\n\\newpage\n\n")
+    READMEfich <- paste0("md/README_", group, ".md")
+    writeLines(README, READMEfich)
+})
 
