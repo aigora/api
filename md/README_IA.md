@@ -41,8 +41,8 @@ Nuestra idea de proyecto es crear un brazo robotico capaz de ser controlado por 
 
 \newpage
 
-# [Caja fuerte] :: twIA_2021-caja_fuerte
-Caja fuerte con alarma mediante arduino.
+# [Papelera] :: twIA_2021-caja_fuerte
+
 [Descripción breve del proyecto a realizar (2-3 frases).]
 
 ## Integrantes del equipo
@@ -438,6 +438,20 @@ Pablo Manuel Sánchez
 
 ## Objetivos del trabajo
 Ampliar nuestros conocimientos sobre los sensores que vamos a utilizar además de practicar y mejorar nuestra habilidad a la hora de crear y manejar código en el lenguaje de C
+\newpage
+
+# [SENSOR IDENTIFICADOR] :: twIA_2021-sensor_identificador
+
+[Un pedazo de sensor que permitirá acceder a cualquier sala mediante un código y tarjetas electrónicas.]
+
+## Integrantes del equipo
+
+[Guillermo Rosales Pérez GuillermoRosale5.]
+[Manuel Sánchez Francés manusanchezf.]
+
+## Objetivos del trabajo
+
+[Lista de los objetivos que se persiguen con el trabajo propuesto.]
 \newpage
 
 # [Título del trabajo] :: twIA_2021-sistema-de-mezcla-de-liquidos

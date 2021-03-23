@@ -105,6 +105,22 @@ Celia González Matas, CeliaGonz
 - El usuario deberá introducir su nombre y edad, tambien deberá ir eligiendo la respuesta que mas se adapte a su condición entre las preguntas que iran saliendo a lo largo del programa, tras ello el programa ira ofreciendo distintas opciones que el usuario debera elegir basandose en sus preferencias. 
 \newpage
 
+# EATSIDI AND GO :: twIQ_2021-eatsidi-and-go
+
+Se trata de una aplicación de servicio de comida a domicilio en la que se ofertan múltiples restaurantes de todo tipo para los envíos. Dispone de filtros de búsqueda según el tipo de comida que se prefiera, el precio, la popularidad que tengan o la disponibilidad, entre otros. Al iniciar sesión ingresará el saldo con el que realizar los pedidos.
+
+## Integrantes del equipo
+
+Alfredo Secades @alfredosecades      
+Ana Recio @anarecio02      
+Aarón Nieto @aaronnieto
+
+## Objetivos del trabajo
+
+Entre los objetivos se busca la comodidad para el cliente sumado a la gran variedad de restaurantes, para que pueda disfrutar de ellos en cualquier momento sin necesidad de desplazarse.
+También buscamos que aquellas personas que no puedan desplazarse a los restaurantes o salir de su domicilio debido a la crisis sanitaria que vivimos, puedan seguir disfrutando de sus platos favoritos desde su casa con total seguridad.
+\newpage
+
 # Cocinando con EDI :: twIQ_2021-edi-ts
 Lugar donde encontrarás numerosas recetas que se adaptarán a cada uno de los usuarios. Para ello dispondremos de un menú en el que se especificarán los gustos y alergias para encontrar el plato perfecto.
 
@@ -121,7 +137,7 @@ Vamos a presentar este trabajo con el objetivo de facilitar las comidas del día
 Para ello  crearemos un lugar en el que el usuario tendrá fácil acceso a una serie de platos y lista de alimentos adaptada a cada una de las distintas situaciones en las que se encuentre. Esto estará compuesto por varios menús adecuados a alérgenos, embarazadas, distintas festividades…
 \newpage
 
-# //Epic Quest :: twIQ_2021-epic_quest
+# Epic Quest :: twIQ_2021-epic_quest
 
 Juego, en el que el protagista, en este caso un caballer@, alien, etc (según elección de lo que quiera ser), ha de ir venciendo a una serie de enemigos, tras resolver unos acertijos y así narrar su propia historia.
 
@@ -131,17 +147,15 @@ Jaime Alonso Poyatos {SoyJaimeXD}
 Eduardo Huélamo Castellanos {Edvardo87}
 
 Javier Escudero García {listo2020}
+
 ## Objetivos del trabajo
-
--Logar crear un juego entretenido
-
--Lograr una optimización tiempo-trabajo buena, para asi poder tener tiempo para otras asignaturas
-
--Ayudar a futuros trabajos dando una idea distinta
-
--Adquirir nuevos conocimientos sobre programación y aprovechar los adquiridos
-
--Sacar buena nota
+-Utilizar funciones correctamente.
+-Optimizar el juego correctamente.
+-Aplicar todos los ficheros aprendidos en clase y alguno mas.
+-Utilizar vectores numericos y de caráteres correcftamente.
+-Lograr crear un juego entretenido.
+-Ayudar a futuros trabajos dando una idea distinta.
+-Adquirir nuevos conocimientos sobre programación y aprovechar los adquiridos.
 \newpage
 
 # Página de gestión de un gimnasio :: twIQ_2021-fitnesshub
@@ -227,6 +241,25 @@ Esther Gonzalez Fernandez: estherglez02]
 ## Objetivos del trabajo
 
 [Lista de los objetivos que se persiguen con el trabajo propuesto.]
+\newpage
+
+# NBA GOATS :: twIQ_2021-nba-goats
+Es un programa para aficionados a la NBA, cuenta con una base de datos de todos los equipos nba, con información de los jugadores. Aparte de informarte acerca de tus jugadores favoritos, tu puedes predecir el campeón de la NBA realizando el bracket y también podrás elegir tu equipo all-star, tu MVP, el mejor entrenador, mejor sexto hombre..., y guardarlo para compararlo con el de otros amigos.
+## Integrantes del equipo
+
+AADNAN TALIB RIZQUI @adnantalib3
+
+DIEGO MEDINA ESPINOSA @Diego105
+
+## Objetivos del trabajo
+
+Deseo de conseguir registrar a usuarios para una mejor experiencia con el programa.
+• Mejorar el switch case del menú para optimizar el programa con bucles
+• Permitir al usuario la posibilidad de regresar en cualquier momento al menú inicial.
+• Permitir el retroceso de una pantalla a otra.
+• Cambiar la forma de escribir en los ficheros cambiando los gets y puts.
+• Actualizar la extensa base de datos del programa e intentar ampliarla con nuevos datos
+útiles para el usuario.
 \newpage
 
 # [Reserva restaurante] :: twIQ_2021-reserva-restaurante
@@ -320,6 +353,23 @@ Mensaje de despedida.
 [Lista de los objetivos que se persiguen con el trabajo propuesto.]
 \newpage
 
+# Trivial Violetos PRO :: twIQ_2021-trivial-violetos
+
+Pon a prueba tu intelecto , cultura general y habilidad social y matemática a través del más selecto trivial jamás creado . Gana a tus amigos 
+y demuestra quién va a la cabeza en cuanto a coeficiente intelectual se refiere recolectando todos los VIOLETOS posibles .
+
+
+## Integrantes del equipo
+
+[Miguel Águeda Leal , q-103-1 , usuario "miguelagueda1".  
+Violeta Carrascal Acebrón , q-103-1, usuaria "Violetacarrascal".   
+Jorge Escobar Arenas , q-103-1, usuario "Escobar-klk".
+
+## Objetivos del trabajo
+
+Reflejar en este cada uno de los conocimientos adquiridos, y con ello conseguir que el usuario pase un rato agradable.
+\newpage
+
 # [TupmTaller] :: twIQ_2021-tupmtaller
 
 [Proporcionar informacion a cerca de las diversas reparaciones, pedidos y dudas de los clientes,de un taller convencional].
@@ -335,7 +385,20 @@ Mensaje de despedida.
 [Crear un programa que permita automatizar a los clientes de su taller de toda la vida que contenga todo tipo de ofertas, precios, reservas y reparaciones para resolver todas sus dudas antes de visitar el taller]
 \newpage
 
-# [Título del trabajo] :: twIQ_2021-basedatos
+# [MUNDIAL DE BALONCESTO] :: twIQ_2021-basedatos
+
+[¿Quieres tener información a tu alcance sobre tus jugadores favoritos de Baloncesto? ¡Pues este es tu lugar! Además de obtener información relevante sobre las fichas de los jugadores, también podrás crear tus propias simulaciones de partidos y de equipos. ¡Ven a comprobar! ]
+
+## Integrantes del equipo
+
+[Angel Olmedo (@angelolmedo20)   Arturo Bolivar (@arturobcas)   Marcos Castro (@MasterCus)]
+
+## Objetivos del trabajo
+
+[se busca implementar, de manera sencilla para el usuario, una base de datos con información de jugadores, equipos y la posibilidad de creación de los mismos, del mundo del baloncesto. ]
+\newpage
+
+# [Título del trabajo] :: twIQ_2021-twiq_2021-fitnesshub
 
 [Descripción breve del proyecto a realizar (2-3 frases).]
 
@@ -361,34 +424,6 @@ Mensaje de despedida.
 [Lista de los objetivos que se persiguen con el trabajo propuesto.]
 \newpage
 
-# [Título del trabajo] :: twIQ_2021-twiq_2021-nba_goats
-
-[Descripción breve del proyecto a realizar (2-3 frases).]
-
-## Integrantes del equipo
-
-[Nombres, apellidos, y usuario GitHub de los integrantes del equipo.]
-
-## Objetivos del trabajo
-
-[Lista de los objetivos que se persiguen con el trabajo propuesto.]
-\newpage
-
-# Trivial Violetos PRO :: twIQ_2021-twiq_2021-trivialvioletos
-
-[Pon a prueba tu intelecto , cultura general y habilidad social y matemática a través del más selecto trivial jamás creado . Gana a tus amigos y demuestra quién va a la cabeza en cuanto a coeficiente intelectual se refiere recolectando todos los VIOLETOS posibles .]
-
-## Integrantes del equipo
-
-[[Miguel Águeda Leal , q-103-1 , usuario "miguelagueda1".
-Violeta Carrascal Acebrón , q-103-1, usuaria "Violetacarrascal".
-Jorge Escobar Arenas , q-103-1, usuario "Escobar-klk".]
-
-## Objetivos del trabajo
-
-[Lista de los objetivos que se persiguen con el trabajo propuesto.]
-\newpage
-
 # [Título del trabajo] :: twIQ_2021-anuelometro
 
 [Descripción breve del proyecto a realizar (2-3 frases).]
@@ -400,22 +435,6 @@ Jorge Escobar Arenas , q-103-1, usuario "Escobar-klk".]
 ## Objetivos del trabajo
 
 [Lista de los objetivos que se persiguen con el trabajo propuesto.]
-\newpage
-
-# EATSIDI AND GO :: twIQ_2021_EATSIDI_AND_GO
-
-Se trata de una aplicación de servicio de comida a domicilio en la que se ofertan múltiples restaurantes de todo tipo para los envíos. Dispone de filtros de búsqueda según el tipo de comida que se prefiera, el precio, la popularidad que tengan o la disponibilidad, entre otros. Al iniciar sesión ingresará el saldo con el que realizar los pedidos.
-
-## Integrantes del equipo
-
-Alfredo Secades @alfredosecades      
-Ana Recio @anarecio02      
-Aarón Nieto @aaronnieto
-
-## Objetivos del trabajo
-
-Entre los objetivos se busca la comodidad para el cliente sumado a la gran variedad de restaurantes, para que pueda disfrutar de ellos en cualquier momento sin necesidad de desplazarse.
-También buscamos que aquellas personas que no puedan desplazarse a los restaurantes o salir de su domicilio debido a la crisis sanitaria que vivimos, puedan seguir disfrutando de sus platos favoritos desde su casa con total seguridad.
 \newpage
 
 # [Piedra, papel o tijera 2.0] :: twIQ_2021-ultimatum

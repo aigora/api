@@ -1,11 +1,11 @@
-# [Título del trabajo]
+# [MUNDIAL DE BALONCESTO]
 
-[Descripción breve del proyecto a realizar (2-3 frases).]
+[¿Quieres tener información a tu alcance sobre tus jugadores favoritos de Baloncesto? ¡Pues este es tu lugar! Además de obtener información relevante sobre las fichas de los jugadores, también podrás crear tus propias simulaciones de partidos y de equipos. ¡Ven a comprobar! ]
 
 ## Integrantes del equipo
 
-[Nombres, apellidos, y usuario GitHub de los integrantes del equipo.]
+[Angel Olmedo (@angelolmedo20)   Arturo Bolivar (@arturobcas)   Marcos Castro (@MasterCus)]
 
 ## Objetivos del trabajo
 
-[Lista de los objetivos que se persiguen con el trabajo propuesto.]
+[se busca implementar, de manera sencilla para el usuario, una base de datos con información de jugadores, equipos y la posibilidad de creación de los mismos, del mundo del baloncesto. ]

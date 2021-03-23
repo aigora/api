@@ -21,16 +21,16 @@ El programa que vamos a desarrollar nos dirá qué movimiento es el más favorab
 
 # Programa de comandas de una cafetería :: twIE_2021-cafetsidi
 
-Este trabajo consistirá en el desarrollo de un programa que consistirá en el pedido de un café y comida (opcional) a gusto del usuario. 
+Este trabajo consistirá en el desarrollo de un programa que consistirá en el pedido de un café y comida (opcional) a gusto del usuario. Todos los pedidos quedarán registrados y guardados. Nosotros podremos acceder a la base de datos y consultar las ganancias.  
 
 ## Integrantes del equipo
 
 - Joshua Guila Valderueda @Joshgv25
-- Solomiya Havryshko @github-clasroom  [bot]
+- Solomiya Havryshko @solomiyahav
 - Mario Carrión Sirvent @mcsirvent
 
 ## Objetivos del trabajo
-
+Dominar el uso de ficheros y de funciones. Haremos una base de datos que incluirá ventas, beneficios netos, producto más vendido, etc. 
 
 \newpage
 
@@ -41,7 +41,7 @@ En el proyecto haremos un programa para jugar a las damas ya sea contra una pers
 ## Integrantes del equipo
 (añadid vuestro usuario) <br/>
 Dario Carnés Blasco (dcblasco) (https://github.com/dcblasco)<br/>
-Diego Sanchez Rey  <br/>
+Diego Sanchez Rey (https://github.com/diego22222) <br/>
 Juan Nicolás Jiménez Pérez (https://github.com/JuanNicolasJimenez)<br/>
 Bogurad Barañski Barañska (https://github.com/Vegely)  <br/>
 
@@ -324,25 +324,28 @@ Les ofreceremos excursiones acordes a su ruta y gustos.
 Seleccionarán las excursiones que más les encajen y se adecuen a su presupuesto
 \newpage
 
-# [Reloj inteligente] :: twIE_2021-proyecto_asfj
+# Reloj inteligente :: twIE_2021-proyecto_asfj
 
-[Vamos a programar varias funciones que se pueden encontrar en un reloj inteligente y otras que pensamos que podrían ser útiles]
+Vamos a programar varias funciones que se pueden encontrar en un reloj inteligente y otras que pensamos que podrían ser útiles
 
 ## Integrantes del equipo
 
-Julia Moya Godoy, Sergio Mingo Jiménez, Fabio Lebrón Castillo y Azucena Montalvo Martínez.
+* Julia Moya Godoy ---------------> https://github.com/juliamgy
+* Sergio Mingo Jiménez ----------> https://github.com/Sergio-MJ
+* Fabio Lebrón Castillo -----------> https://github.com/FabioLebron
+* Azucena Montalvo Martínez ---> https://github.com/Azuazuazu
 
 ## Objetivos del trabajo
 
-[Las funciones que queremos que haga nuestro reloj son las siguientes:
-1.Hora
-2.Fecha
-3.Cronometro
-4.Temporizador
-5.Ciclos de tiempo
-6.Gps
-7.Calendario
-8.Calculadora sencilla]
+Las funciones que queremos que haga nuestro reloj son las siguientes:
+1. Hora
+2. Fecha
+3. Cronometro
+4. Temporizador
+5. Ciclos de tiempo
+6. Gps
+7. Calendario
+8. Calculadora sencilla
 \newpage
 
 # [Atrapa 2 millones] :: twIE_2021-proyecto_atrapadosmillones
