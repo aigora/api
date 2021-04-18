@@ -1,14 +1,17 @@
 # Registro CoVid-19 y vacunaciones
 
-[Descripción breve del proyecto a realizar (2-3 frases).]
 
 ## Integrantes del equipo
 
 Marcos Simón Romay @marcossssss
+
 Carlos Loarte Hernández @loarte
+
 Natalia Joueidi Mashlab @nataliaaaajm
-María castro De la Villa @mariacdl
+
+María Castro De la Villa @mariacdl
 
 ## Objetivos del trabajo
 
-[Lista de los objetivos que se persiguen con el trabajo propuesto.]
+El programa que vamos a realizar trata sobre un plan/registro de vacunación del COVID-19, donde dividimos a las personas en varios grupos. Por una parte, queremos añadir también un sistema de seguridad para acceder a la información de cada paciente. Una vez introducida la clave correcta y dentro del sistema, crearemos un menú donde el usuario podrá seleccionar la opción a la que desea acceder. Este menú estará dividido por edades, si padece o no enfermedades, preferencias para el orden de vacunación, si ya tienen la primera dosis puesta,etc. 
+Para diseñar y desarrollar este programa vamo a utilizar el lenguaje C ++ que realice todas las indicaciones previamente programadas. y además de ello utilizaremos herramientas como Arduino, ya que dependiendo de si ocurren ciertos hechos se encenderán unas luces led que significaran una cosa u otra.

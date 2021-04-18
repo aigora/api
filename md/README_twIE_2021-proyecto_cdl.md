@@ -1,7 +1,7 @@
 # Sudoku
 Programa de sudoku que presenta una tabla de 9 × 9 casillas, compuesta por subtablas de 3 × 3 denominadas "regiones".
 
-Algunas celdas ya contienen números, conocidos como "números dados" (o a veces "pistas") y otras están vacias, estas deberán ser rellenadas durante el transcurso del juego.
+Algunas celdas ya contienen números, conocidos como "números dados" (o a veces "pistas") y otras están vacías, estas deberán ser rellenadas durante el transcurso del juego.
 
 
 ## Integrantes del equipo
@@ -10,7 +10,7 @@ Algunas celdas ya contienen números, conocidos como "números dados" (o a veces
 
 - **Jose Luis Torres García** - [Cholis2020](https://github.com/Cholis2020)
       
-- **Hernan Quilleré Arana**    -[HernanQuillere](https://github.com/HernanQuillere)
+- **Hernan Quilleré Arana**    - [HernanQuillere](https://github.com/HernanQuillere)
     
 - **Manuel  Sandin Moreno**     -  [manusandin](https://github.com/manusandin)
 

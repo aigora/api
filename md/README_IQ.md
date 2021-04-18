@@ -33,7 +33,7 @@ Miriam Esteban Bruña @miriam-estebanb
 
 ## Objetivos del trabajo
 
-[Lista de los objetivos que se persiguen con el trabajo propuesto.]
+Realizar un programa que permita al usuario responder preguntas aleatorias sobre diversos temas, apostando "dinero virtual" pudiendo perder una parte de él o todo. Al final del programa, el usuario obtendrá en pantalla la cantidad de dinero que habría ganado en el famoso concurso de televisión.
 \newpage
 
 # Biblio_etsidi :: twIQ_2021-biblio_etsidi
@@ -43,7 +43,7 @@ Miriam Esteban Bruña @miriam-estebanb
 ## Integrantes del equipo
 
 * Lucía Marcos
-* Nerea Rodriguez
+* Nerea Rodriguez López (nerearodriguezlopez)
 * Roberto Roncal España Rq2021
 
 ## Objetivos del trabajo
@@ -90,8 +90,28 @@ Pablo Cantin Fabre; @pcantin8.
 El objetivo del trabajo consta de dos partes: una de ellas es dar información acerca de la champions y el segundo es crear un minijuego de dos jugadores con cinco equipos de la champions que simula un partido, dando como ganador al equipo con mayor valoración en cuanto a sus jugadores.
 \newpage
 
-# consultorioCFL :: twIQ_2021-consultoriocfl
+![image](https://user-images.githubusercontent.com/80641877/114771619-125ccd80-9d6d-11eb-9a1f-3c9926967a69.png) :: twIQ_2021-consultoriocfl
+
+# ConsultorioCFL
 Se trata de un breve cuestionario para que los estudiantes puedan elegir qué carrera poder estudiar en el futuro. Consta de varias preguntas acerca de sus gustos personales, su personalidad, sus motivaciones que finalizará con la asignación de una carrera universitaria. 
+
+MENU OPCIONES:
+Al entrar a nuestro consultorio el usuario se encontrará con varias opciones a elegir como:
+
+1.Registrarse.
+
+2.Iniciar sesion para comenzar.
+
+3.Instrucciones.
+
+4.Salir.
+
+
+
+
+<img width="672" alt="MenudeOpciones" src="https://user-images.githubusercontent.com/80280279/112640270-76ad0100-8e41-11eb-9d3b-496892e50070.png">
+
+
 
 ## Integrantes del equipo
 Lucia Almedros Ranz, luciaalmendros
@@ -152,7 +172,7 @@ Javier Escudero García {listo2020}
 -Utilizar funciones correctamente.
 -Optimizar el juego correctamente.
 -Aplicar todos los ficheros aprendidos en clase y alguno mas.
--Utilizar vectores numericos y de caráteres correcftamente.
+-Utilizar vectores numericos y de caráteres correctamente.
 -Lograr crear un juego entretenido.
 -Ayudar a futuros trabajos dando una idea distinta.
 -Adquirir nuevos conocimientos sobre programación y aprovechar los adquiridos.
@@ -164,15 +184,26 @@ FitnessHub se trata de un programa con el que el usuario podrá getionar su gimn
 ## Integrantes del equipo
 
 Eduardo Viejo Campos. ID 5614867                                                                                                                                                   
-Sergio Rodriguez Rodriguez. ID SergioRodrigu                                                                                                                                       
+Sergio Rodriguez Rodriguez. IDs SergioRodrigu y SergioR02                                                                                                                                      
 Jesus Rinaldi Rodriguez. ID JesusRinaldi
 
 ## Objetivos del trabajo
 
 Nuestro objetivo es crear un programa el cual puediese ser utilizado en un negocio real y que ayudase a la gestión y organizacion del mismo,facilitando el almacenamiento de datos.
+Los objetivos del trabajo son:
+## Objetivo 1: (dar de alta)
+Para dar de alta a un socio, se solicita la introducción de todos sus datos básicos (nombre, dni y tipo de socio).
+## Objetivo 2: (dar de baja)
+Para dar de baja a un socio, se solicita su dni y si el socio está registrado, se eliminan sus datos de la aplicación.
+## Objetivo 3: (modificar datos)
+Se pide un dni y se busca al socio entre los datos registrados por la aplicación. Si se encuentra, se muestran en pantalla los datos del socio, y  a continuación se muestra un menú repetitivo que permite que el usuario actualice el/los dato/s que desee. Si no se encuentra el dni se mostrará un mensaje de ERROR.
+## Objetivo 4: (consulta de los datos)
+Se pide un dni y se busca al socio entre los datos registrados por la aplicación. Si se encuentra, se muestran en pantalla los datos del socio, en caso contrario, se mostrará un mensaje de ERROR.
+
+
 \newpage
 
-HAZTE CON TODOS :: twIQ_2021-hazte-con-todos
+## HAZTE CON TODOS :: twIQ_2021-hazte-con-todos
 
 Realizaremos una hemeroteca sobre los Pokemos clasificandolos por tipo, region en la que se encuentrar, indicando sus evoluciones y alguna informacion adiciconal sobre cada uno. Tambien se aportara informacion sobre los gimnasios pokemon y ligas.
 
@@ -183,8 +214,7 @@ Adrian Langarica Esteban @adrianlan79
 Ruben Ernesto Godoy Salcedo @ruben1000iq
 
 ## Objetivos del trabajo
-
-[Lista de los objetivos que se persiguen con el trabajo propuesto.]
+Vamos a crear este proyecto con el objetivo de que aquellos fans de pokemon tengan un sitio donde poder buscar informacion que les pueda ayudar en sus partidas o saber mas sobre distintos pokemons.
 \newpage
 
 # [AVEU] :: twIQ_2021-interrail-europe
@@ -193,9 +223,9 @@ Aplicacion para buscar billetes de tren por las distintas ciudades europeas, ate
 
 ## Integrantes del equipo
 
-- Andrea Blas Murillo. a.blasm@alumnos.upm.es
-- Alonso Sanchez Garcia.
-- Marina Rodriguez Martinez. marina.rmartinez@alumnos.upm.es
+- Andrea Blas Murillo. a.blasm
+- Alonso Sanchez Garcia. alonso.sgarcia
+- Marina Rodriguez Martinez. marina.rmartinez
 
 
 ## Objetivos del trabajo
@@ -228,9 +258,28 @@ adquiridos en dicho programa.]
 
 \newpage
 
+# [MEMORIZA] :: twIQ_2021-memoriza
+Con este programa podrás fortalecer tu capacidad de retener información mediante una
+amplísima lista de palabras que te ofrecerá el juego, las cuales aparecerán aleatoriamente
+una a una teniendo que memorizarlas e insertándolas en el programa hasta que tu cabeza
+no dé para más. Se podrán elegir temas de palabras, como por ejemplo, animales,
+alimentos, países etc. Pudiendo así competir entre tus amigos para ver quién es el mejor
+memorizando.
+
+## Integrantes del equipo
+Javier Blanco Fernández - Javierelmasblanco
+Adrián Espinosa Jiménez - Adri100
+Pablo Huete Serrano - PabloHuete
+
+## Objetivos del trabajo
+Con este trabajo se pretende tanto ampliar nuestros conocimientos en la asignatura y en
+c++, como hacer pasar un rato divertido entre nuestros jugadores, pudiendo competir entre
+ellos
+\newpage
+
 # [Multijuegos] :: twIQ_2021-multijuegos
 
-[Se trata de una coleccin de varios juegos.]
+[Se trata de una coleccin de varios juegos donde el jugador tiene que elegir en primer lugar si va a quere jugar solo o co una pareja y después se muestran varios juegos para que elija: tres en raya, el 21, piedra papel o tijera y adivinanzas.]
 
 ## Integrantes del equipo
 
@@ -240,7 +289,7 @@ Esther Gonzalez Fernandez: estherglez02]
 
 ## Objetivos del trabajo
 
-[Lista de los objetivos que se persiguen con el trabajo propuesto.]
+[Desarrollar una serie de juegos que permitan entretenerte solo o acompañado.]
 \newpage
 
 # NBA GOATS :: twIQ_2021-nba-goats
@@ -355,13 +404,13 @@ Mensaje de despedida.
 
 # Trivial Violetos PRO :: twIQ_2021-trivial-violetos
 
-Pon a prueba tu intelecto , cultura general y habilidad social y matemática a través del más selecto trivial jamás creado . Gana a tus amigos 
+Pon a prueba tu intelecto , cultura general y habilidad social y matemática a través del más selecto quiz jamás creado. Gana a tus amigos 
 y demuestra quién va a la cabeza en cuanto a coeficiente intelectual se refiere recolectando todos los VIOLETOS posibles .
 
 
 ## Integrantes del equipo
 
-[Miguel Águeda Leal , q-103-1 , usuario "miguelagueda1".  
+Miguel Águeda Leal , q-103-1 , usuario "miguelagueda1".  
 Violeta Carrascal Acebrón , q-103-1, usuaria "Violetacarrascal".   
 Jorge Escobar Arenas , q-103-1, usuario "Escobar-klk".
 
@@ -396,32 +445,6 @@ Reflejar en este cada uno de los conocimientos adquiridos, y con ello conseguir 
 ## Objetivos del trabajo
 
 [se busca implementar, de manera sencilla para el usuario, una base de datos con información de jugadores, equipos y la posibilidad de creación de los mismos, del mundo del baloncesto. ]
-\newpage
-
-# [Título del trabajo] :: twIQ_2021-twiq_2021-fitnesshub
-
-[Descripción breve del proyecto a realizar (2-3 frases).]
-
-## Integrantes del equipo
-
-[Nombres, apellidos, y usuario GitHub de los integrantes del equipo.]
-
-## Objetivos del trabajo
-
-[Lista de los objetivos que se persiguen con el trabajo propuesto.]
-\newpage
-
-# [Título del trabajo] :: twIQ_2021-twiq_2021-memoriza
-
-[Descripción breve del proyecto a realizar (2-3 frases).]
-
-## Integrantes del equipo
-
-[Nombres, apellidos, y usuario GitHub de los integrantes del equipo.]
-
-## Objetivos del trabajo
-
-[Lista de los objetivos que se persiguen con el trabajo propuesto.]
 \newpage
 
 # [Título del trabajo] :: twIQ_2021-anuelometro

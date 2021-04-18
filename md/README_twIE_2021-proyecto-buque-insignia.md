@@ -7,6 +7,7 @@ El clásico juego de los barcos y coordenadas, pero con un añadido
 - Adrián Teixeira de Uña (@AdriTeixeHax)
 - Matías Gabriel Polo Reyes (@matiaspolo)
 - Daniel Soto Aguilar (@danielsotoaguilar)
+- Jorge Bachiller Cordero (@JorgeBachiller)
 
 ## Objetivos del trabajo
 

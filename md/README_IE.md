@@ -40,10 +40,10 @@ En el proyecto haremos un programa para jugar a las damas ya sea contra una pers
 
 ## Integrantes del equipo
 (añadid vuestro usuario) <br/>
-Dario Carnés Blasco (dcblasco) (https://github.com/dcblasco)<br/>
-Diego Sanchez Rey (https://github.com/diego22222) <br/>
-Juan Nicolás Jiménez Pérez (https://github.com/JuanNicolasJimenez)<br/>
-Bogurad Barañski Barañska (https://github.com/Vegely)  <br/>
+Dario Carnés Blasco [@dcblasco](https://github.com/dcblasco)<br/>
+Diego Sanchez Rey [@diego22222](https://github.com/diego22222) <br/>
+Juan Nicolás Jiménez Pérez [@JuanNicolasJimenez](https://github.com/JuanNicolasJimenez)<br/>
+Bogurad Barañski Barañska [@Vegely](https://github.com/Vegely)  <br/>
 
 ## Objetivos del trabajo
 
@@ -103,14 +103,19 @@ Intentaremos hacer el conocidisimo juego del Trivial con preguntas relacionadas 
 
 ## Integrantes del equipo
 
-Lucia Alvarez Diaz (luciaalvarezdiaz)
-Regina Gomez Navarro (reginagomez)
-Lucia Alvarez Corada (luciaalcorada) 
-Alicia Fernández Sánchez (AliciaFernandezS)
+**Lucia Alvarez Diaz** [@luciaalvarezdiaz] 
+
+**Regina Gomez Navarro** [@reginagomez]
+
+**Lucia Alvarez Corada** [@luciaalcorada] 
+
+**Alicia Fernández Sánchez** [@AliciaFernandezS]
 
 ## Objetivos del trabajo
 
-Hacer un juego ameno para aprender sobre nuestra carrera.
+Realizar un juego en el que el usuario pueda jugar solo o acompañado y responder una serie de preguntas con el fin de conseguir completar el juego.
+El juego se gana cuando el usuario consigue acertar una pregunta de cada tema: Matemáticas, máquinas eléctricas, química e informática.
+Gracias a esto conseguremos aprender sobre nuestra carrera además de a utilizar github
 \newpage
 
 # J_A_Y :: twIE_2021-j_a_y_
@@ -119,9 +124,9 @@ El JAY es un juego de acción, que tiene lugar en un laberinto horizontal infini
 
 ## Integrantes del equipo
 
-ANGI GUO YIN @angiguoyin
+**ANGI GUO YIN @angiguoyin
 José F. Umiri @JoseUmiri
-YUAN QIAN @Yuan-Qian-XD
+YUAN QIAN @Yuan-Qian-XD**
 
 ## Objetivos del trabajo
 
@@ -142,7 +147,7 @@ Luis Peñaranda @Luispdelmazo (https://github.com/Luispdelmazo/Inicio_Github)
 
 ## Objetivos del trabajo
 
-[Crear una experiencia agradable e inmersiva lo que se pueda, un laberinto entretenido
+Crear una experiencia agradable e inmersiva lo que se pueda, un laberinto entretenido
 con algún reto y un poco de humor, y que se pueda realizar de más de una forma para que siempre
 que se inicie no te obligue a ver exactamente los mismos mensajes sino que haya algún tipo de 
 rejugabilidad que lo haga interesante.
@@ -234,6 +239,7 @@ El clásico juego de los barcos y coordenadas, pero con un añadido
 - Adrián Teixeira de Uña (@AdriTeixeHax)
 - Matías Gabriel Polo Reyes (@matiaspolo)
 - Daniel Soto Aguilar (@danielsotoaguilar)
+- Jorge Bachiller Cordero (@JorgeBachiller)
 
 ## Objetivos del trabajo
 
@@ -241,18 +247,18 @@ El usuario colocará los barcos en una matriz de 10x10 como en el juego original
 
 \newpage
 
-# [Busca Minas] :: twIE_2021-proyecto-busca-minas
-
-[Descripción breve del proyecto a realizar (2-3 frases).]
-
-## Álvaro Martín @AlvaroMartin3, Jorge Marquez @JorgemarquezUPM, Marcos Mariblanca @MarcosML02, Jesus Marin Delgado @jesuppedia.
-
-[Nombres, apellidos, y usuario GitHub de los integrantes del equipo.]
+# Busca Minas :: twIE_2021-proyecto-busca-minas
 
 ## Vamos a realizar una versión "lite" del clásico buscaminas.
 
-[Lista de los objetivos que se persiguen con el trabajo propuesto.]
-## Pretendemos que este programa coloque en un tablero una serie de objetivos para que el jugador, mediante pistas numericas, halle su lugar, si el usuario descubre una mina sin marcar su posicion perdera.
+Álvaro Martín @AlvaroMartin3 
+Jorge Marquez @JorgemarquezUPM
+Marcos Mariblanca @MarcosML02 
+Jesus Marin Delgado @jesuppedia
+
+## Objetivos
+
+- Pretendemos que este programa coloque en un tablero una serie de objetivos para que el jugador, mediante pistas numericas, halle su lugar, si el usuario descubre una mina sin marcar su posicion perdera.
 \newpage
 
 # Atención al cliente Restaurante Mijas :: twIE_2021-proyecto-mijas
@@ -294,17 +300,17 @@ El segundo modo de juego consiste en perseguir y capturar a los fantasmas, cuant
 El tercer modo de juego, es un multijugador, salen dos personajes principales en el tablero y usando diferentes teclas cada uno de los dos jugadores para el movimiento de este, competiran a ver quien consigue mas puntuación.
 \newpage
 
-# [Scape room] :: twIE_2021-proyecto-scape-room
+# Scape room :: twIE_2021-proyecto-scape-room
 
-[Se trata de un juego de hasta 4 participantes quienes competirán en los diferentes niveles y lucharán por llegar al final antes que el resto, el jugador que consiga superar las pruebas primero será el ganador de la partida]
+Se trata de un juego de hasta 4 participantes quienes competirán en los diferentes niveles y lucharán por llegar al final antes que el resto, el jugador que consiga superar las pruebas primero será el ganador de la partida
 
 ## Integrantes del equipo
 
-[Jorge Sánchez Serafín @jorge-sánchez-serafín,  Marta Garrido Algaba @marta-garrido-algaba, Carlos Ramírez .../  Óscar Sáez Polo  @oscar.saez ]
+Jorge Sánchez Serafín @jorge-sánchez-serafín,  Marta Garrido Algaba @marta-garrido-algaba, Carlos Ramírez Gonzalez @Carlos-ramirez02, Óscar Sáez Polo  @oscar.saez 
 
 ## Objetivos del trabajo
 
-[Aprender a trabajar con GibHub y conocer la programaciob desde un punto de vista práctico y palpable enfocado en el desarrollo de proyectos, descubriendo un gran abánico en el mundo de la progamación, que podrá servir en un futuro para el desarrolo de proyectos, trabajos, videojuegos etc.]
+Aprender a trabajar con GibHub y conocer la programación desde un punto de vista práctico y palpable enfocado en el desarrollo de proyectos, descubriendo un gran abánico en el mundo de la progamación, que podrá servir en un futuro para el desarrolo de proyectos, trabajos, videojuegos etc.
 \newpage
 
 # [Título del trabajo] :: twIE_2021-proyecto-dellping
@@ -348,27 +354,24 @@ Las funciones que queremos que haga nuestro reloj son las siguientes:
 8. Calculadora sencilla
 \newpage
 
-# [Atrapa 2 millones] :: twIE_2021-proyecto_atrapadosmillones
+# Atrapa 2 millones :: twIE_2021-proyecto_atrapadosmillones
 Queremos llevar a cabo un proyecto que simule un programa de preguntas con opciones; parecido al de atrapa un millón, en el que el usuario en vez de elegir una opcion puede dividir el "dinero" entre varias si tiene dudas.
-[Descripción breve del proyecto a realizar (2-3 frases).]
 
 ## Integrantes del equipo
-Gonzalo Peinado Franganillo, @gonzalo.peinado@alumnos.upm.es
-David Gomez Rodriguez, @david.gomez52@alumnos.upm.es
-Miguel Guirao Villena, @miguel.guirao@alumnos.upm.es
-[Nombres, apellidos, y usuario GitHub de los integrantes del equipo.]
+- Gonzalo Peinado Franganillo, [@gonzalo.peinado@alumnos.upm.es] (https://github.com/gonzalopeinado)
+- David Gomez Rodriguez, [@david.gomez52@alumnos.upm.es] (https://github.com/Davidd02)
+- Miguel Guirao Villena, [@miguel.guirao@alumnos.upm.es] (https://github.com/MiguelGV22)
 
 ## Objetivos del trabajo
 Entretener al usuario.
 Que los usuarios que la utilizan aprendan cosas sobre cultura general.
 Hacer algo vistoso, que llame la atención participar.
-[Lista de los objetivos que se persiguen con el trabajo propuesto.]
 \newpage
 
 # Sudoku :: twIE_2021-proyecto_cdl
 Programa de sudoku que presenta una tabla de 9 × 9 casillas, compuesta por subtablas de 3 × 3 denominadas "regiones".
 
-Algunas celdas ya contienen números, conocidos como "números dados" (o a veces "pistas") y otras están vacias, estas deberán ser rellenadas durante el transcurso del juego.
+Algunas celdas ya contienen números, conocidos como "números dados" (o a veces "pistas") y otras están vacías, estas deberán ser rellenadas durante el transcurso del juego.
 
 
 ## Integrantes del equipo
@@ -377,7 +380,7 @@ Algunas celdas ya contienen números, conocidos como "números dados" (o a veces
 
 - **Jose Luis Torres García** - [Cholis2020](https://github.com/Cholis2020)
       
-- **Hernan Quilleré Arana**    -[HernanQuillere](https://github.com/HernanQuillere)
+- **Hernan Quilleré Arana**    - [HernanQuillere](https://github.com/HernanQuillere)
     
 - **Manuel  Sandin Moreno**     -  [manusandin](https://github.com/manusandin)
 
@@ -456,22 +459,45 @@ Marco Gaspar Martín [@Marpiki11](https://github.com/Marpiki11)
 Nuestra intención con este proyecto es la creación de una plataforma de juegos con la que pasar el rato. Esta plataforma quiere contentar a un público variado y reunir a gente distinta con gustos diferentes. Para ello, programaremos distintos minijuegos con los que pasar un buen rato. Por el momento nuestra intención es hacer una ruleta, un scaperoom y un blacjack, aunque esperamos elaborar alguno más.
 \newpage
 
-# [Proyect_X] :: twIE_2021-proyect_x
+# Proyect_X :: twIE_2021-proyect_x
 
 Con el uso de Arduino, recoger datos con sensores, organizarlos y clasificarlos en una base de datos.
 
 ## Integrantes del equipo
 
-Gabriel Santos Jericó @Gabriel-S-J
-Álvaro Velasco Muela @AlvaroVelascoMuela
-Guillermo Quero Ponce @GuillermoQueroPonce
-Mario Torre Merino @MarioTorre
+**Gabriel Santos Jericó** [@Gabriel-S-J](https://github.com/Gabriel-S-J)
+
+
+**Álvaro Velasco Muela** [@AlvaroVelascoMuela](https://github.com/AlvaroVelascoMuela)
+
+
+**Guillermo Quero Ponce** [@GuillermoQueroPonce](https://github.com/GuillermoQueroPonce)
+
+
+**Mario Torre Merino** [@MarioTorre](https://github.com/MarioTorre)
 
 ## Objetivos del trabajo
 
-- Crear un código junto con arduino que permita analizar y guardar datos con los que poder realizar tablas de memoria.
-
+- Este trabajo constará de una placa "Arduino UNO",conectada a dos sensores, un sesnor "DHT11",que mide temperatura y humedad ambiental y otro sensor "TPM36", que solo mide temperatura. En primer lugar los dos sensores harán una medición de temperatura ,y calculará el error relativo entre ambas y depués se tomará el valor de la humedad,cada x tiempo.
+ Por otro lado habrá otro programa en C que organice los datos, que haga una media aritmética y que nos avise si la temperatura y humedad baja o sube de unos valores previamente estabclecidos por teclado.
 \newpage
 
 Error in file(con, "r") : no se puede abrir la conexión
  :: twIE_2021-ruleta-2021
+\newpage
+
+# War simulator :: twIE_2021-war-simulator
+
+Consiste en realizar un programa al que tu le metes el número de participantes deseado y el programa vaya eliminandolos aleatoriamente uno a uno.
+
+## Integrantes del equipo
+
+
+Nombre y apellidos:Daniel Garcia Arana; @DanielGarciaArana
+Nombre y apellidos:Pablo Iglesias Caballero; Usuario Github: ?
+Nombre y apellidos:Carlos Mirón Diaz; Usuario Github: ?.
+
+
+## Objetivos del trabajo
+
+Crear un programa interactivo que realice operciones aleatorias.

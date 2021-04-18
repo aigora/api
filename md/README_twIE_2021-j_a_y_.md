@@ -4,9 +4,9 @@ El JAY es un juego de acción, que tiene lugar en un laberinto horizontal infini
 
 ## Integrantes del equipo
 
-ANGI GUO YIN @angiguoyin
+**ANGI GUO YIN @angiguoyin
 José F. Umiri @JoseUmiri
-YUAN QIAN @Yuan-Qian-XD
+YUAN QIAN @Yuan-Qian-XD**
 
 ## Objetivos del trabajo
 
