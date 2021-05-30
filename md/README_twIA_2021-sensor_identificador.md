@@ -1,15 +1,13 @@
 # [SENSOR IDENTIFICADOR]
 
-[Un sistema de identificacion mediante temperatura e identificadores NFC para acceder a una sala a traves de una puerta electronica.]
+[Un sistema de control de acceso de usuarios y sanitario que es autónomo y requiere una identificación y temperatura adecuada para acceder a un centro privado.]
 
 ## Integrantes del equipo
 
 [Guillermo Rosales Pérez GuillermoRosale5.]
-[Manuel Sánchez Francés manusanchezf.]
 [Daniel van Reenen DanielvanReenen.]
-[Patricio Juan Peñalaver Carvajal Patriciopenalver.]
-[Jaime Muñoz Mejías jmunozm2.]
-[Natalia Rodriguez Molina nataliarodriiguez.]
+
+Nota: en el transcurso del proyecto varios compañeros decidieron dejar de lado la asignatura, los 2 que quedan son los que finalmente realizaron el proyecto.
 
 ## Descripción del trabajo
 

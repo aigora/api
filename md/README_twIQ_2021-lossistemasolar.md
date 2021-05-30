@@ -1,6 +1,6 @@
 # [SISTEMA SOLAR]
 ## Descripcion del trabajo
-[Nuestros proyecto se divide en dos partes iniciales.
+[Nuestro proyecto se divide en dos partes iniciales.
 La primera parte se basa en la actividad didactica a traves de la divulgacion de conocimientos sobre el sistema solar.
 La segunda parte se trata de una serie de actividades interactivas para mostras las competencia poseidas.]
 

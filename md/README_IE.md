@@ -39,7 +39,7 @@ Dominar el uso de ficheros y de funciones. Haremos una base de datos que incluir
 En el proyecto haremos un programa para jugar a las damas ya sea contra una persona o contra un bot.
 
 ## Integrantes del equipo
-(añadid vuestro usuario) <br/>
+
 Dario Carnés Blasco [@dcblasco](https://github.com/dcblasco)<br/>
 Diego Sanchez Rey [@diego22222](https://github.com/diego22222) <br/>
 Juan Nicolás Jiménez Pérez [@JuanNicolasJimenez](https://github.com/JuanNicolasJimenez)<br/>
@@ -49,7 +49,7 @@ Bogurad Barañski Barañska [@Vegely](https://github.com/Vegely)  <br/>
 
 1) Crear un tablero que no tenga que ser redibujado tras cada movimiento <br/>
 2) Intentar que se puedan mover fichas clickando con el ratón <br/>
-3) Crear un Bot para jugar contra él (no vemos factible programar una IA) <br/>
+3) Crear un Bot para jugar contra él <br/>
 
 \newpage
 
@@ -120,7 +120,7 @@ Gracias a esto conseguremos aprender sobre nuestra carrera además de a utilizar
 
 # J_A_Y :: twIE_2021-j_a_y_
 
-El JAY es un juego de acción, que tiene lugar en un laberinto horizontal infinito. En busca de aventuras, entrarás en una cueva por causalidad, donde se encuentra unas monedas mágicas por los pasillos. Descubres que esas monedas te dan poderes para escalar por las paredes con rapidez, desde ese momento decides conseguir todas monedas mágicas que hay en esta cueva. Pero para conseguirlo, tendrás que enfrentar a una variedad de trampas. El tiempo no te espera, consigue tus monedas mágicas.
+El JAY es un juego arcade, que tiene lugar en un laberinto horizontal. En busca de aventuras, entrarás en una cueva por causalidad, donde se encuentra unas estrellas mágicas por los pasillos. Desde ese momento decides conseguir todas estrellas mágicas que hay en esta cueva. Consigue tus estrellas mágicas.
 
 ## Integrantes del equipo
 
@@ -130,7 +130,9 @@ YUAN QIAN @Yuan-Qian-XD**
 
 ## Objetivos del trabajo
 
-El producto final del trabajo consiste que los jugadores pudiesen chocar o escalar con rapidez por las paredes de los laberintos, consiguiendo las monedas. La estructura de los laberintos ya se considera como una trampa, debido que si el jugar no consigue todas las monedas no podría pasar el nivel.
+El producto final de nuestro trabajo consiste en que el jugador pudiera manipular los controles para pasar los sofocantes laberintos, consiguiendo el  máximo número de estrellas mágicas en los pasillos de los laberintos.
+
+El jugador podrá elegir entre los distintos niveles ofrecidos, y seleccionar las dificultades propuestas por los creadores.
 \newpage
 
 # Laberinto :: twIE_2021-laberinto
@@ -140,7 +142,6 @@ Tenemos pensado hacer un laberinto con misterios y pruebas que le daran
  iremos mejorándolo, el objetivo claro será lograr salir.
 
 ## Integrantes del equipo
-Abraham Pumarada @abrahampumarada (https://github.com/abrahampumarada?tab=packages)
 Jorge Bengoa @Jorgebpinedo
 Luis Muro @LuisMiguelMuro
 Luis Peñaranda @Luispdelmazo (https://github.com/Luispdelmazo/Inicio_Github)
@@ -216,18 +217,20 @@ Crear un juego de poker descubierto en el que hayan 52 cartas sin contar el como
 9.  Escalera de color (straight flush): cinco cartas correlativas del mismo palo.
 \newpage
 
-# TETRIS_GAME :: twIE_2021-poyecto_tetris
+# ARCADE_GAME :: twIE_2021-poyecto_tetris
 
-Realizar el famoso videojueo tetris utilizando una placa de arduino.
+Realizar el famoso videojuego pong utilizando una placa de arduino.
 
 ## Integrantes del equipo
 
-Santiago Carazo Pintado, Jose Bermejo Mengíbar, Pablo Balmaseda Gila.
+* Santiago Carazo Pintado 
+* Jose Bermejo Mengíbar
+* Pablo Balmaseda Gila
 
 ## Objetivos del trabajo
 
--Crear un juego de Tetris funcional utilizando una placa de Arduino y panel led.
--Mostrar la puntuación del jugador y la puntuación máxima obtenida (highscore).
+* Crear el juego "pong" funcional utilizando una placa de Arduino y panel led.
+* Mostrar la puntuación del jugador y la puntuación máxima obtenida (highscore).
 \newpage
 
 # Proyecto Buque Insignia :: twIE_2021-proyecto-buque-insignia
@@ -297,7 +300,6 @@ El primer modo de juego sera el modo de juego original, el pacman clásico.
 
 El segundo modo de juego consiste en perseguir y capturar a los fantasmas, cuanto menos tiempo se tarde en realizarlo mas puntos se gana.
 
-El tercer modo de juego, es un multijugador, salen dos personajes principales en el tablero y usando diferentes teclas cada uno de los dos jugadores para el movimiento de este, competiran a ver quien consigue mas puntuación.
 \newpage
 
 # Scape room :: twIE_2021-proyecto-scape-room
@@ -313,7 +315,7 @@ Jorge Sánchez Serafín @jorge-sánchez-serafín,  Marta Garrido Algaba @marta-g
 Aprender a trabajar con GibHub y conocer la programación desde un punto de vista práctico y palpable enfocado en el desarrollo de proyectos, descubriendo un gran abánico en el mundo de la progamación, que podrá servir en un futuro para el desarrolo de proyectos, trabajos, videojuegos etc.
 \newpage
 
-# [Título del trabajo] :: twIE_2021-proyecto-dellping
+# Proyecto Dellping :: twIE_2021-proyecto-dellping
 RUTAS POR ESPAÑA, planeamos viajes por España, cumpliendo con los requisitos de los consumidores y ofreciéndoles las mayores facilidades posibles, adecuándonos a su presupuesto y a sus preferencias en cuanto a fechas.
 
 ## Integrantes del equipo
@@ -410,7 +412,7 @@ Realizaremos un código con el cual una persona jugará con una IA al juego del 
  
  2-Realizar una especie de "Ranking" almacenando las puntuaciones de los jugadores.
  
- 3-Pasar a retocar y decorar de forma más visual el juego una vez haber hecho funcionar el código. (Esto se realizara si disponemos de tiempo)
+ 3-Pasar a retocar y decorar de forma más visual el juego una vez haber hecho funcionar el código.
  
 \newpage
 
@@ -421,23 +423,23 @@ Se va a realizar una pagina web la cual tendra diversos cuestioniarios de difere
 ## Integrantes del equipo
 
 * Eduardo Fernandez [(Edufdezg)](https://github.com/Edufdezg)
-* Javier de la Hoz [(Javierdelahoz4)](https://github.com/Javierdelahoz4)
 * Ignacio Fernandez [(Nachofdez2708)](https://github.com/Nachofdez2708)
 * Iñigo Azqueta [(inigoazqueta)](https://github.com/inigoazqueta)
+* Javier de la Hoz [(Javierdelahoz4)](https://github.com/Javierdelahoz4)
 
 ## Objetivos del trabajo
 
-Apareceran cuestionarios como por ejemplo (lo más probable es que sean sobre otros temas que decidamos más adelante):
+Apareceran cuestionarios como por ejemplo:
 
 1-Cuestionario de personalidad: respondiendo a unas preguntas determinadas, se llegara a una conclusion sobre la personalidad del realizador de dicho cuestionario.
 
-2-Cuestionario de inteligencia: respondiendo a unas preguntas determinadas, se llegara a una conclusion sobre el IQ del realizador de dicho cuestionario.
+2-Cuestionario de deportes: respondiendo a unas preguntas determinadas, se podrá observar si el realizador tiene gran cultura acerca de los deportes.
 
-3-Cuestionario de moda: respondiendo a unas preguntas determinadas, se llegara a una conclusion sobre el tipo de gustos de forma de vestir del realizador de dicho cuestionario.
+3-Test del carné de conducir: es un cuestionario modo examen teórico con preguntas tipo test, para ver si está preparado para ir al examen.
 
 4-Cuestionario de cultura general: respondiendo a unas preguntas determinadas, se llegara a una conclusion sobre el conocimiento del realizador de dicho cuestionario.
 
-5-Cuestionario de politica: respondiendo a unas preguntas determinadas, se llegara a una conclusion sobre la orientacion politica del realizador de dicho cuestionario.
+5-Cuestionario de países: respondiendo a unas preguntas determinadas, se podrá comprobar el nivel de cultura internacional y aprender sobre ello.
 
 La caracteristica de estos cuestionarios se basa en darte un perfil o resultado en funcion de las eleccion realizadas.
 \newpage
@@ -461,6 +463,8 @@ Nuestra intención con este proyecto es la creación de una plataforma de juegos
 
 # Proyect_X :: twIE_2021-proyect_x
 
+![](https://github.com/aigora/twIE_2021-proyect_x/blob/master/logo.png)
+
 Con el uso de Arduino, recoger datos con sensores, organizarlos y clasificarlos en una base de datos.
 
 ## Integrantes del equipo
@@ -482,8 +486,30 @@ Con el uso de Arduino, recoger datos con sensores, organizarlos y clasificarlos 
  Por otro lado habrá otro programa en C que organice los datos, que haga una media aritmética y que nos avise si la temperatura y humedad baja o sube de unos valores previamente estabclecidos por teclado.
 \newpage
 
-Error in file(con, "r") : no se puede abrir la conexión
- :: twIE_2021-ruleta-2021
+Ruleta-2021 :: twIE_2021-ruleta-2021
+
+Saúl Marcos Molinuevo.
+
+En este proyecto de ha diseñado la programación del juego de la ruleta.
+
+La programación está dividida en dos partes.
+Una accesible desde el menú de registro, donde el usuario puede registraste o iniciar sesión.
+Y otra en el menú de juego, donde el usuario puede decidir aposar a un número, a color, a impar o par, a pasa o falta, ver los resultados anteriores, cambiar de usuario o salir del programa.
+
+Toda la programación se ha realizado para que el usuario no pueda meter caracteres incorrectos, para ello se han diseñado funciones como checknumeric, la cual verifica si el usuario ha metido una cadena de caracteres dentro de un determinado rango o no.
+
+A continuación, tiene una pequeña introducción del programa.
+
+
+Bienvenido a la RULETA ETSIDI
+
+Aqui te explicaremos como funciona el programa.
+
+En primer lugar copiate la carpeta que pone "Ruleta Juego", no la que pone "Ruleta Programador", y cpiatela en tu ordenador.
+En ella encontrar diversos ficheros .txt y un programa que se llama 1.exe
+Haz doble clic en 1.exe
+
+Es muy importante que el programa 1.exe este en las misma carpeta que los ficheros, sinó el programa te dará error.
 \newpage
 
 # War simulator :: twIE_2021-war-simulator
@@ -494,10 +520,12 @@ Consiste en realizar un programa al que tu le metes el número de participantes 
 
 
 Nombre y apellidos:Daniel Garcia Arana; @DanielGarciaArana
-Nombre y apellidos:Pablo Iglesias Caballero; Usuario Github: ?
-Nombre y apellidos:Carlos Mirón Diaz; Usuario Github: ?.
+Nombre y apellidos:Pablo Iglesias Caballero; Usuario Github: iglesiascaballeropablo
+Nombre y apellidos:Carlos Mirón Diaz; Usuario Github: Miron29.
 
 
 ## Objetivos del trabajo
 
-Crear un programa interactivo que realice operciones aleatorias.
+Preguntar al usuario que opcion de juego quiere.
+Ejecutar el modo de juego hasta que se cierre el programa.
+En caso de querer continuar la partida recuperar datos y continuar.

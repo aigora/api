@@ -81,6 +81,10 @@ Para ejecutar el código hay que abrir el fichero deseado desde el explorador de
  El fichero [[commits.R]] obtiene la información de los /commits/ realizados en cada repositorio tipo =tw=. Genera un fichero =csv/commits_*= por cada repositorio listado en el fichero [[csv/teamsByRepo.csv]]. Estos ficheros contienen dos columnas: 
  - =name=, nombre del integrante del equipo que ha realizado el /commit/.
  - =date=, fecha y hora en la que se realizó el /commit/.
+ - =total=, número total de cambios realizados en el /commit/.
+ - =additions=, número de cambios añadidos.
+ - =deletions=, número de cambios eliminados.
+ - =sha=, identificador único del /commit/.
 
  Además, genera un fichero de datos agregados, [[csv/resumen_commits.csv]], con tres columnas:
  - =repo=, nombre del repositorio

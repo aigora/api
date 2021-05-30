@@ -6,10 +6,12 @@ Consiste en realizar un programa al que tu le metes el número de participantes 
 
 
 Nombre y apellidos:Daniel Garcia Arana; @DanielGarciaArana
-Nombre y apellidos:Pablo Iglesias Caballero; Usuario Github: ?
-Nombre y apellidos:Carlos Mirón Diaz; Usuario Github: ?.
+Nombre y apellidos:Pablo Iglesias Caballero; Usuario Github: iglesiascaballeropablo
+Nombre y apellidos:Carlos Mirón Diaz; Usuario Github: Miron29.
 
 
 ## Objetivos del trabajo
 
-Crear un programa interactivo que realice operciones aleatorias.
+Preguntar al usuario que opcion de juego quiere.
+Ejecutar el modo de juego hasta que se cierre el programa.
+En caso de querer continuar la partida recuperar datos y continuar.

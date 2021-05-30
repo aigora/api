@@ -1,5 +1,7 @@
 # Proyect_X
 
+![](https://github.com/aigora/twIE_2021-proyect_x/blob/master/logo.png)
+
 Con el uso de Arduino, recoger datos con sensores, organizarlos y clasificarlos en una base de datos.
 
 ## Integrantes del equipo

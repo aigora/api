@@ -1,6 +1,6 @@
 # J_A_Y
 
-El JAY es un juego de acción, que tiene lugar en un laberinto horizontal infinito. En busca de aventuras, entrarás en una cueva por causalidad, donde se encuentra unas monedas mágicas por los pasillos. Descubres que esas monedas te dan poderes para escalar por las paredes con rapidez, desde ese momento decides conseguir todas monedas mágicas que hay en esta cueva. Pero para conseguirlo, tendrás que enfrentar a una variedad de trampas. El tiempo no te espera, consigue tus monedas mágicas.
+El JAY es un juego arcade, que tiene lugar en un laberinto horizontal. En busca de aventuras, entrarás en una cueva por causalidad, donde se encuentra unas estrellas mágicas por los pasillos. Desde ese momento decides conseguir todas estrellas mágicas que hay en esta cueva. Consigue tus estrellas mágicas.
 
 ## Integrantes del equipo
 
@@ -10,4 +10,6 @@ YUAN QIAN @Yuan-Qian-XD**
 
 ## Objetivos del trabajo
 
-El producto final del trabajo consiste que los jugadores pudiesen chocar o escalar con rapidez por las paredes de los laberintos, consiguiendo las monedas. La estructura de los laberintos ya se considera como una trampa, debido que si el jugar no consigue todas las monedas no podría pasar el nivel.
+El producto final de nuestro trabajo consiste en que el jugador pudiera manipular los controles para pasar los sofocantes laberintos, consiguiendo el  máximo número de estrellas mágicas en los pasillos de los laberintos.
+
+El jugador podrá elegir entre los distintos niveles ofrecidos, y seleccionar las dificultades propuestas por los creadores.

@@ -12,7 +12,7 @@ Nuestra idea de proyecto es crear un brazo robótico capaz de ser controlado por
 
 4. Alvaro Lopez Villarroel-AlvaroLVillarroel
 
-5. Euchan kang-dinner123
+5. Eunchan kang-dinner123
 
 ## Objetivos del trabajo
 
@@ -26,15 +26,15 @@ El brazo robótico controlado por un guante, se inspira en los brazos automatiza
 
 ## Movimiento del brazo
 1. Pinzas:
-La pinza es controlada con los botones localizados en el dedo medio y meñique. La pinza se cierra apretando el índice con el dedo medio. Para abrir la pinza apretamos el dedo medio con el meñique.
+La pinza es controlada con una resistencia flexible en el dedo índice. Si doblamos este dedo hasta la mitad provocaremos que las pinzas de brazo robot vayan cerrandose pero si se dobla del todo hará que las pinzas de abran.
 2. Muñeca:
-La muñeca es controlada con una resistencia flexible en el dedo índice. Doblar este dedo hasta la mitad provocará que la muñeca del robot baje, doblarlo del todo hará que este  suba.
+La muñeca es controlada con una resistencia flexible en el dedo corazón. Doblar este dedo hasta la mitad provocará que la muñeca del robot baje, doblarlo del todo hará que este  suba.
 3. Codo:
-El codo es controlado con un acelerómetro. Girar la palma hacia arriba o hacia abajo mueve el codo del robot en la dirección respectiva.
+El codo es controlado con un acelerómetro. Girar el dorso de la mano hacia arriba o hacia abajo mueve el codo del robot en la dirección respectiva.
 4. Hombro:
-Controlado por un acelerómetro girar la palma hacia la derecha o hacia la izquierda mueve el hombro en la dicección respectiva. 
+Controlado por un acelerómetro girar el dorso de la mano hacia la derecha o hacia la izquierda mueve el hombro en la dicección respectiva. 
 5. Base:
-También controlado por un acelerómetro muy parecido al hombro o el codo. Girar la palma hacia la derecha o izquierda mientras la palma se mantiene en hacia arriba mueva la base del robot hacia la derecha o hacia la izquierda. 
+También controlado por un acelerómetro muy parecido al hombro o el codo. Girar el dorso de la mano hacia la derecha o izquierda mientras la palma se mantiene en hacia arriba mueva la base del robot hacia la derecha o hacia la izquierda. 
 
 Cada una de estas partes serán controladas con el uso de un guante que controlaremos manualmente con nuestra mano.
 Dependiendo de la extremidad que movamos de la mano, se interactuará con las distintas partes de nuestro brazo robótico.
@@ -47,7 +47,7 @@ El actuador del que vamos a hacer uso para que el brazo robot se mueva es el ser
 
 SENSORES
 
-Por otro lado, usaremos acelerómetros, dispositivos que miden la aceleración (la variación de la velocidad respecto del tiempo). Los acelerómetros cuentan con una masa suspendida en su interior mediante muelles. De esta forma, al aplicar un movimiento, la masa se mueve y provoca la elongación y la contracción de los muelles. El desplazamiento de la masa interna permite determinar la aceleración. Los acelerómetros son capaces de medir en los tres ejes (x, y, z).
+Por otro lado, usaremos acelerómetros, que son dispositivos que miden la aceleración (la variación de la velocidad respecto del tiempo). Los acelerómetros cuentan con una masa suspendida en su interior mediante muelles. De esta forma, al aplicar un movimiento, la masa se mueve y provoca la elongación y la contracción de los muelles. El desplazamiento de la masa interna permite determinar la aceleración. Los acelerómetros son capaces de medir en los tres ejes (x, y, z).
 
 Emplearemos botones o pulsadores, sensores de lo más simple pues solo tienen dos estados. Estos detectan si están siendo pulsados (se ejerce presión sobre ellos) o si no lo están, de manera que el programa pueda actuar en consecuencia. 
 

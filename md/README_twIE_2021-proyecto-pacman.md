@@ -20,4 +20,3 @@ El primer modo de juego sera el modo de juego original, el pacman clásico.
 
 El segundo modo de juego consiste en perseguir y capturar a los fantasmas, cuanto menos tiempo se tarde en realizarlo mas puntos se gana.
 
-El tercer modo de juego, es un multijugador, salen dos personajes principales en el tablero y usando diferentes teclas cada uno de los dos jugadores para el movimiento de este, competiran a ver quien consigue mas puntuación.

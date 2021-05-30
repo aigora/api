@@ -9,4 +9,6 @@ Adrian Langarica Esteban @adrianlan79
 Ruben Ernesto Godoy Salcedo @ruben1000iq
 
 ## Objetivos del trabajo
-Vamos a crear este proyecto con el objetivo de que aquellos fans de pokemon tengan un sitio donde poder buscar informacion que les pueda ayudar en sus partidas o saber mas sobre distintos pokemons.
+
+Los objetivos del trabajo es crear un programa que ayude a la gente que le guste pokemon para que mediante un pequeño buscador puedan encontrar facilmente cada 
+pokemon que deseen, ademas podran entrar en una creador de equipos en los cuales se guardara sus elecciones para proximas veces que desen entrar.

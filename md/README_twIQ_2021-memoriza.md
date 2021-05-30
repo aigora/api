@@ -1,10 +1,8 @@
 # [MEMORIZA]
-Con este programa podrás fortalecer tu capacidad de retener información mediante una
-amplísima lista de palabras que te ofrecerá el juego, las cuales aparecerán aleatoriamente
-una a una teniendo que memorizarlas e insertándolas en el programa hasta que tu cabeza
-no dé para más. Se podrán elegir temas de palabras, como por ejemplo, animales,
-alimentos, países etc. Pudiendo así competir entre tus amigos para ver quién es el mejor
-memorizando.
+Con este programa podrás fortalecer tu capacidad de retener información mediante
+la memorización de distintos números que serán proporcionados por el programa.
+Se podrá elegir entre tres dificultades, variando las cifras y la cantidad de números a memorizar.
+Pudiendo así competir entre tus amigos para ver quién es el mejor memorizando.
 
 ## Integrantes del equipo
 Javier Blanco Fernández - Javierelmasblanco

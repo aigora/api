@@ -15,3 +15,4 @@ Deseo de conseguir registrar a usuarios para una mejor experiencia con el progra
 • Cambiar la forma de escribir en los ficheros cambiando los gets y puts.
 • Actualizar la extensa base de datos del programa e intentar ampliarla con nuevos datos
 útiles para el usuario.
+•Cambiar el planteamiento de algunas funciones para que no dependan de la posición en los ficheros.

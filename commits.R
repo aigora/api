@@ -4,108 +4,148 @@ source('API.R')
 ## COMMITS
 ##################################################################
 
-teamsByRepo <- fread("csv/teamsByRepo.csv")
+reposByTeams <- fread("csv/reposByTeams.csv")
 
-repoNames <- teamsByRepo$repo_name
-
-exRepos <- c("fundamentos_c",
-             "sentencias_control",
-             "tipos_avanzados_datos",
-             "punteros",
-             "funciones",
-             "ficheros")
+repoNames <- reposByTeams$repo_name
 
 twRepos <- repoNames[grepl("tw", repoNames)]
 
+twIE <- twRepos[grepl("twIE", twRepos)]
+twIQ <- twRepos[grepl("twIQ", twRepos)]
+twIA <- twRepos[grepl("twIA", twRepos)]
+
 ## Recupera datos de ficheros locales
-twCommits <- lapply(twRepos, function(x)
+commitsIE <- lapply(twIE, function(x)
 {
     fread(paste0("csv/commits_", x, ".csv"))
 })
-names(twCommits) <- twRepos
+names(commitsIE) <- twIE
+
+commitsIQ <- lapply(twIQ, function(x)
+{
+    fread(paste0("csv/commits_", x, ".csv"))
+})
+names(commitsIQ) <- twIQ
+
+commitsIA <- lapply(twIA, function(x)
+{
+    fread(paste0("csv/commits_", x, ".csv"))
+})
+names(commitsIA) <- twIA
 
 
-## -------------------------------------------------
+
+##################################################################
+## 
 ## Ejecutar únicamente para solicitar datos a GitHub
-twCommits <- lapply(twRepos, function(repo)
+##
+##################################################################
+commits <- function(repo)
 {
     cat(repo, "\n")
+    ## Información básica de cada uno de los commits del repositorio
     parsed <- getPages(paste0("/repos/aigora/",
-                         repo,
-                         "/commits"))
-    
+                              repo,
+                              "/commits"))
+    ## Me quedo únicamente con la fecha y el nombre del autor.
     author <- lapply(parsed, function(x)
         x$commit$author[c("name", "date")])
     
     author <- rbindlist(author)
 
+    ## Con el SHA accederé a información detallada del commit
     sha <- lapply(parsed, function(x) x$sha)
-
     sha <- do.call(c, sha)
-
+    ## Recorro cada uno de los commits identificados por el SHA para
+    ## obtener estadísticas
     commits <-  lapply(sha, function(sha)
         getPages(paste0("/repos/aigora/",
-                         repo,
+                        repo,
                         "/commits/",
                         sha)))
     stats <- lapply(commits, function(x)
         x$stats)
     stats <- rbindlist(stats)
 
+    ## Junto todo...
     res <- cbind(author, stats, sha)
-    
+    ## Y escribo fichero
     write.csv(res,
-               file = paste0("csv/commits_", repo, ".csv"),
-               row.names = FALSE)
+              file = paste0("csv/commits_", repo, ".csv"),
+              row.names = FALSE)
+    res
+}
 
-})
-names(twCommits) <- twRepos
 
+commitsIE <- lapply(twIE, commits)
+names(commitsIE) <- twIE
 
-## exCommits <- lapply(exRepos, function(x)
-## {
-##     cat(x, "\n")
-##     parsed <- getPages(paste0("/repos/aigora/",
-##                          x,
-##                          "/commits"))
-    
-##     author <- lapply(parsed, function(x)
-##         x$commit$author[c("name", "date")])
-##     res <- do.call(rbind, author)
-##     write.csv(res,
-##                file = paste0("csv/commits_", x, ".csv"),
-##                row.names = FALSE)
-##     res
-## })
-## names(exCommits) <- exRepos
+commitsIQ <- lapply(twIQ, commits)
+names(commitsIQ) <- twIQ
+
+commitsIA <- lapply(twIA, commits)
+names(commitsIA) <- twIA
+
 
 ##------------------------------------------------------
+## Resúmenes
 
-
-resumen <-  lapply(seq_along(twCommits), function(i)
+resumenIE <-  lapply(seq_along(commitsIE), function(i)
 {
-    repo <- twRepos[i]
-    info <- twCommits[[i]]
-    N <- nrow(info)
-    xxx <- data.frame(repo = repo,
-               grupo = substr(repo, 3, 6),
-               N = N - 1, ## El primer commit es el bot de GH Classroom
-               total = sum(info$total[-N]), ## No tengo en cuenta el primer commit para las estadísticas
-               add = sum(info$add[-N]),
-               del = sum(info$del[-N]),
-               last = as.Date(info$date[1])## Commit más reciente
-               )
-})
-resumen <- do.call(rbind, resumen)
-rownames(resumen) <- NULL
-
-write.csv(resumen,
-          file = 'csv/resumen_commits.csv',
-          row.names = FALSE)
-
-lapply(seq_along(twCommits), function(i)
-    write.csv(twCommits[[i]],
-              file = paste0("csv/commits_", twRepos[i], ".csv"),
+    repo <- twIE[i]
+    datos <- commitsIE[[i]]
+    resumen <- datos[name != "github-classroom[bot]",
+                     .(
+                         date = max(date),
+                         add = sum(additions),
+                         del = sum(deletions),
+                         tot = sum(total)),
+                     by = name]
+    write.csv(resumen,
+              file = paste0('csv/resumen_',
+                            repo,
+                            '.csv'),
               row.names = FALSE)
-)
+    resumen
+})
+names(resumenIE) <- names(commitsIE)
 
+resumenIA <-  lapply(seq_along(commitsIA), function(i)
+{
+    repo <- twIA[i]
+    datos <- commitsIA[[i]]
+    resumen <- datos[name != "github-classroom[bot]",
+                     .(
+                         date = max(date),
+                         add = sum(additions),
+                         del = sum(deletions),
+                         tot = sum(total)),
+                     by = name]
+    write.csv(resumen,
+              file = paste0('csv/resumen_',
+                            repo,
+                            '.csv'),
+              row.names = FALSE)
+    resumen
+})
+names(resumenIA) <- names(commitsIA)
+
+resumenIQ <-  lapply(seq_along(commitsIQ), function(i)
+{
+    repo <- twIQ[i]
+    datos <- commitsIQ[[i]]
+    resumen <- datos[name != "github-classroom[bot]",
+                     .(
+                         date = max(date),
+                         add = sum(additions),
+                         del = sum(deletions),
+                         tot = sum(total)),
+                     by = name]
+    write.csv(resumen,
+              file = paste0('csv/resumen_',
+                            repo,
+                            '.csv'),
+              row.names = FALSE)
+    resumen
+})
+names(resumenIQ) <- names(commitsIQ)

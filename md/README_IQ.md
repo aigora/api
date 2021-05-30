@@ -11,14 +11,14 @@ Vamos a realizar el clásico juego del ahorcado, versión digital, para poder ju
 ## Objetivos del trabajo
 
 - Dar visibilidad a los juegos de nuestra infancia, dándole un toque más moderno.
-- Crear una versión entretenida para entretener a la gente.
+- Crear una versión entretenida para divertir a la gente.
 - Se deberá indicar si se juega en solitario o en equipo. Cada usuario introducirá su nombre.
 - En caso de ser en solitario, será el programa el que se encargue de crear una palabra, que será adivinada por el usuario.
 - Si es por equipos, será un jugador del equipo contrario quien cree la palabra.
-- Solo se permitirán 7 fallos por palabra.
-- Consistirá en 3 rondas de 5 palabras. En cada ronda va aumentando el nivel de dificultad (en el primero se darán pistas,...).
+- Solo se permitirán 8 fallos por palabra.
+- Consistirá en distintas rondas en las que irá aumentando el nivel de dificultad.
 - El ganador será aquel que acierte más palabras. Aparecerá el nombre del ganador en pantalla.
-- En solitario si aciertas las 5 palabras de las 3 rondas el programa te felicitará.
+- Al final apareceran los puntos obtenidos por pantalla.
 \newpage
 
 # Atrapa un millón :: twIQ_2021-atrapaunmillon
@@ -49,9 +49,8 @@ Realizar un programa que permita al usuario responder preguntas aleatorias sobre
 ## Objetivos del trabajo
 
 * Implementación de una herramienta útil de gestión de una biblioteca personal
-* Permitir al usuario el etiquetado y registro de entradas
 * Permitir al usuario la consulta y filtrado de archivos
-* Permitir al usuario la modificación y borrado de archivos
+* Permitir al usuario la incorporacion de nuevos archivos
 \newpage
 
 # Buscador de Hoteles :: twIQ_2021-buscadordehoteles
@@ -64,7 +63,7 @@ Ana Boston Berned. Usuario: anaboston
 
 Gonzalo Gil Vallejo. Usuario: GonzaloGV13
 
-Silvia Hernández Cuerdas. Usuario:
+Silvia Hernández Cuerdas. Usuario:SilviaHernandezCuerdas
 
 ## Objetivos del trabajo
 
@@ -77,7 +76,7 @@ Silvia Hernández Cuerdas. Usuario:
 
 #  Champions :: twIQ_2021-champions
 
-Es un programa basado principalmente en dar información acerca de la Champions (ya que te da juego a poder ver información sobre los equipos, sus jugadores o estadísticas generales de la competición,entre otras cosas), aunque también te da la opción de simular un partido entre los 5 grandes de Europa. 
+Es un programa basado principalmente en dar información acerca de la Champions (ya que te da juego a poder ver información sobre los equipos, sus jugadores o estadísticas generales de la competición,entre otras cosas), aunque también te da la opción de simular un partido entre los 5 grandes de Europa, hacer el once ideal de la Champions y crear tu propio ganador en la competición. 
 
 ## Integrantes del equipo
 
@@ -87,30 +86,14 @@ Pablo Cantin Fabre; @pcantin8.
 
 ## Objetivos del trabajo
 
-El objetivo del trabajo consta de dos partes: una de ellas es dar información acerca de la champions y el segundo es crear un minijuego de dos jugadores con cinco equipos de la champions que simula un partido, dando como ganador al equipo con mayor valoración en cuanto a sus jugadores.
+El objetivo del trabajo consta de dos partes: una de ellas es dar información acerca de la champions y el segundo es crear tres minijuegos. El primero es multijugador, simulando un partido. El segundo da la opción al usuario de crear su propia Champions eligiando a los ganadores de los partidos a partir de octavos de final (los clasificados de la temporada 20/21). El último te dejará crear tu once ideal de la Champions según tu criterio.
 \newpage
 
-![image](https://user-images.githubusercontent.com/80641877/114771619-125ccd80-9d6d-11eb-9a1f-3c9926967a69.png) :: twIQ_2021-consultoriocfl
+![image](https://user-images.githubusercontent.com/80641877/118678083-ff6e6a80-b7fc-11eb-97fd-8c8bebc66eb4.png) :: twIQ_2021-consultoriocfl
+
 
 # ConsultorioCFL
 Se trata de un breve cuestionario para que los estudiantes puedan elegir qué carrera poder estudiar en el futuro. Consta de varias preguntas acerca de sus gustos personales, su personalidad, sus motivaciones que finalizará con la asignación de una carrera universitaria. 
-
-MENU OPCIONES:
-Al entrar a nuestro consultorio el usuario se encontrará con varias opciones a elegir como:
-
-1.Registrarse.
-
-2.Iniciar sesion para comenzar.
-
-3.Instrucciones.
-
-4.Salir.
-
-
-
-
-<img width="672" alt="MenudeOpciones" src="https://user-images.githubusercontent.com/80280279/112640270-76ad0100-8e41-11eb-9d3b-496892e50070.png">
-
 
 
 ## Integrantes del equipo
@@ -159,7 +142,7 @@ Para ello  crearemos un lugar en el que el usuario tendrá fácil acceso a una s
 
 # Epic Quest :: twIQ_2021-epic_quest
 
-Juego, en el que el protagista, en este caso un caballer@, alien, etc (según elección de lo que quiera ser), ha de ir venciendo a una serie de enemigos, tras resolver unos acertijos y así narrar su propia historia.
+Juego, en el que el protagista, en este caso un caballer@, alien, etc (según elección de lo que quiera ser), ha de ir avanzando en una aventura, tras resolver unos acertijos y así narrar su propia historia.
 
 ## Integrantes del equipo
 Jaime Alonso Poyatos {SoyJaimeXD}
@@ -214,7 +197,9 @@ Adrian Langarica Esteban @adrianlan79
 Ruben Ernesto Godoy Salcedo @ruben1000iq
 
 ## Objetivos del trabajo
-Vamos a crear este proyecto con el objetivo de que aquellos fans de pokemon tengan un sitio donde poder buscar informacion que les pueda ayudar en sus partidas o saber mas sobre distintos pokemons.
+
+Los objetivos del trabajo es crear un programa que ayude a la gente que le guste pokemon para que mediante un pequeño buscador puedan encontrar facilmente cada 
+pokemon que deseen, ademas podran entrar en una creador de equipos en los cuales se guardara sus elecciones para proximas veces que desen entrar.
 \newpage
 
 # [AVEU] :: twIQ_2021-interrail-europe
@@ -233,14 +218,16 @@ Aplicacion para buscar billetes de tren por las distintas ciudades europeas, ate
 - Venta de billetes de trenes.
 - Registro de usuario.
 - Eleccion del destino y fecha.
-- El pasajero debera decidir si queire facturar o no el equipaje.
+- El pasajero debera decidir si quiere facturar o no el equipaje.
 - Eleccion del tipo de tarifa.
+- Tipo de asiento.
+
 
 \newpage
 
 # [SISTEMA SOLAR] :: twIQ_2021-lossistemasolar
 ## Descripcion del trabajo
-[Nuestros proyecto se divide en dos partes iniciales.
+[Nuestro proyecto se divide en dos partes iniciales.
 La primera parte se basa en la actividad didactica a traves de la divulgacion de conocimientos sobre el sistema solar.
 La segunda parte se trata de una serie de actividades interactivas para mostras las competencia poseidas.]
 
@@ -259,12 +246,10 @@ adquiridos en dicho programa.]
 \newpage
 
 # [MEMORIZA] :: twIQ_2021-memoriza
-Con este programa podrás fortalecer tu capacidad de retener información mediante una
-amplísima lista de palabras que te ofrecerá el juego, las cuales aparecerán aleatoriamente
-una a una teniendo que memorizarlas e insertándolas en el programa hasta que tu cabeza
-no dé para más. Se podrán elegir temas de palabras, como por ejemplo, animales,
-alimentos, países etc. Pudiendo así competir entre tus amigos para ver quién es el mejor
-memorizando.
+Con este programa podrás fortalecer tu capacidad de retener información mediante
+la memorización de distintos números que serán proporcionados por el programa.
+Se podrá elegir entre tres dificultades, variando las cifras y la cantidad de números a memorizar.
+Pudiendo así competir entre tus amigos para ver quién es el mejor memorizando.
 
 ## Integrantes del equipo
 Javier Blanco Fernández - Javierelmasblanco
@@ -279,17 +264,17 @@ ellos
 
 # [Multijuegos] :: twIQ_2021-multijuegos
 
-[Se trata de una coleccin de varios juegos donde el jugador tiene que elegir en primer lugar si va a quere jugar solo o co una pareja y después se muestran varios juegos para que elija: tres en raya, el 21, piedra papel o tijera y adivinanzas.]
+[Se trata de una coleccion de varios juegos clásicos entre los que se encuentran el 3 en raya, el piedra papel o tijera o las adivinanzas. Es posible jugar solo o contra un amigo. Además, después de cada partida los datos se guardarán y se podra acceder a ellos después de jugar.]
 
 ## Integrantes del equipo
 
-[Marta Liñan Morales usuario:martalinan
-Maika Del Sol Juvera  usuario: maikadelsol
-Esther Gonzalez Fernandez: estherglez02]
+[Marta Liñan Morales usuario:martalinan]
+[Maika Del Sol Juvera  usuario: maikadelsol]
+[Esther Gonzalez Fernandez: estherglez02]
 
 ## Objetivos del trabajo
 
-[Desarrollar una serie de juegos que permitan entretenerte solo o acompañado.]
+[Desarrollar una serie de juegos que permitan el entretenimiento de cualquier persona, individualmente o acompañado, y que sea dinámico e intuitivo.]
 \newpage
 
 # NBA GOATS :: twIQ_2021-nba-goats
@@ -309,6 +294,7 @@ Deseo de conseguir registrar a usuarios para una mejor experiencia con el progra
 • Cambiar la forma de escribir en los ficheros cambiando los gets y puts.
 • Actualizar la extensa base de datos del programa e intentar ampliarla con nuevos datos
 útiles para el usuario.
+•Cambiar el planteamiento de algunas funciones para que no dependan de la posición en los ficheros.
 \newpage
 
 # [Reserva restaurante] :: twIQ_2021-reserva-restaurante
@@ -337,6 +323,23 @@ Registro del usuario con una contraseña para poder realizar la reserva. En el m
 -Estado actual del restaurante.
 
 -Cancelación.
+\newpage
+
+![Logo](https://user-images.githubusercontent.com/61472188/119862756-1f96db80-bf19-11eb-9ae8-04c8c560cd4b.png) :: twIQ_2021-rondas
+
+# Rondas
+Bienvenidos, este es un juego donde puedes hacer un cuestionario de 10 preguntas para poner a prueba tus conocimientos sobre análisis instrumental de los primeros 5 temas.
+
+
+## Integrantes del equipo
+Manuel Alejandro Taboada Da Silva , Usuario: "ManuelTaboada"
+Raul Del Campo Almaraz , Usuario: "LordDementus"
+Kevin Joseph Choto Once, Usuario: "MrBotKa"
+## Objetivos del trabajo
+Se quiere realizar un pequeño cuestionario que a través de preguntas cortas pero de gran ayuda obtengas unos conocimientos previos antes de iniciar en la materia.
+El cuestionario te mostrará tu puntuación final una vez que hayas finalizado un tema cualquiera.
+Hemos permitido que el código sea simple de ampliar sin tener que modificar o ampliar en exceso las variables, haciéndolo fácil de expandir.
+Posible opción para un solo estudiante.
 \newpage
 
 # [Juego de la serpiente] :: twIQ_2021-serpiente_game
@@ -379,7 +382,6 @@ zhiqin Hu , zhiqinHu
 Introducir un nombre de usuario para entrar al menú de juegos.
 Elegir el juego al que quieras jugar.
 Pulsa botón ayuda para mostrar las reglas del juego.
-Mensaje de alerta si llevas demasiado tiempo jugando al juego.
 Opcion  para cambiar el juego o reiniciarlo.
 Menu de fin de Juego.
 Mensaje de despedida.
@@ -404,19 +406,30 @@ Mensaje de despedida.
 
 # Trivial Violetos PRO :: twIQ_2021-trivial-violetos
 
-Pon a prueba tu intelecto , cultura general y habilidad social y matemática a través del más selecto quiz jamás creado. Gana a tus amigos 
-y demuestra quién va a la cabeza en cuanto a coeficiente intelectual se refiere recolectando todos los VIOLETOS posibles .
+Pon a prueba tu intelecto , cultura general , habilidad social y matemática a través del más selecto test jamás creado.
+Responde preguntas, intentando acertar el máximo número de preguntas posibles hasta completar todas las cuestiones , lo que te llevará a la siguiente 
+categoría. Finalmente se te proporcionará un listado con los campos de conocimiento que más dominas y en los que flojeas.
+Destaca en todos los posibles , y ... ¡Veremos qué te depara el futuro! 
 
+***
 
 ## Integrantes del equipo
 
-Miguel Águeda Leal , q-103-1 , usuario "miguelagueda1".  
-Violeta Carrascal Acebrón , q-103-1, usuaria "Violetacarrascal".   
-Jorge Escobar Arenas , q-103-1, usuario "Escobar-klk".
+- Miguel Águeda Leal , q-103-1 , usuario `miguelagueda1`.  
+- Violeta Carrascal Acebrón , q-103-1, usuaria `Violetacarrascal`.   
+- Jorge Escobar Arenas , q-103-1, usuario `Escobar-klk`.
+
+***
 
 ## Objetivos del trabajo
 
-Reflejar en este cada uno de los conocimientos adquiridos, y con ello conseguir que el usuario pase un rato agradable.
+1. Completar la construcción de un test/quiz funcional.
+2. Crear un juego multiplataforma apto para todas las edades, etnias , géneros y religiones.
+3. Realizar un videojuego fluido capaz de comparar respuestas y puntajes.
+4. Formar un menú accesible y fácil de manejar.
+5. Programar un código capaz de interactuar con el usuario ,ofreciendo una interfaz sencilla al manejo.
+
+
 \newpage
 
 # [TupmTaller] :: twIQ_2021-tupmtaller
@@ -447,20 +460,20 @@ Reflejar en este cada uno de los conocimientos adquiridos, y con ello conseguir 
 [se busca implementar, de manera sencilla para el usuario, una base de datos con información de jugadores, equipos y la posibilidad de creación de los mismos, del mundo del baloncesto. ]
 \newpage
 
-# [Título del trabajo] :: twIQ_2021-anuelometro
+# Proyecto-Progra-FAB :: twIQ_2021-anuelometro
 
-[Descripción breve del proyecto a realizar (2-3 frases).]
+INTEGRANTES DEL EQUIPO 
+   Ángel Rubio Ramos 
+   Federico Javier Laoroga de Villa
 
-## Integrantes del equipo
+OBJETIVOS DEL TRABAJO (Idea del proyecto)
 
-[Nombres, apellidos, y usuario GitHub de los integrantes del equipo.]
-
-## Objetivos del trabajo
-
-[Lista de los objetivos que se persiguen con el trabajo propuesto.]
+   Los objetivos que se plantean en este trabajo son la creación de un programa escrito en C++, el cual consista en un juego.
+   
+   Este juego se basaría en la creación de un imperio. Para poder crear, mantener y expandir tu propio imperio, deberás tener en cuenta una serie de variables como la salud y lealtad de tu ejercito, el bienestar de tu pueblo, la relaciones internacionales que tengas con los imperios vecinos, la religón que impantes (o no), tu destreza a la hora de enfrentarte en la guerra, o guerras... En definitiva, será un videojuego donde uno crea su propia historia. Y para ello tiene que tomar una serie de decisiones que se le plantean teniendo en cuenta todas las variables anteriormente descritas y más. Además de esto, en las guerras (que seguramente sean dificiles de evitar), se tratará de plantear diferentes minijuegos, adivinanzas, o aquello que se nos vaya ocurriendo y que le de algo de vida al proyecto.
 \newpage
 
-# [Piedra, papel o tijera 2.0] :: twIQ_2021-ultimatum
+# Piedra, papel o tijera 2.0 :: twIQ_2021-ultimatum
 
 [Piedra, papel, tijera, pistola, rayo, dragón, agua, aire, esponja, lobo, árbol, humano, serpiente, fuego, diablo]
 
@@ -472,4 +485,4 @@ Susana Ramos Fernández. ID: susanaramos02]
 
 ## Objetivos del trabajo
 
-[Realizar un programa basado en el juego "Piedra, papel o tijera" con muchas más variantes que lo hacen mucho más divertido. El objetivo será llegar a sumar 1000 puntos en cada partida. Cada vez que ganes una ronda se te sumará un determinado número de puntos, pero si pierdes restarán. Al finalizar la partida aparecerá un marcador con la duración del juego y cuantas rondas has ganado o perdido.]
+Realizar un programa basado en el juego "Piedra, papel o tijera" con muchas más variantes que lo hacen mucho más divertido. Donde tú puedes elegir cuantas veces quieres jugar y si eres capaz de ganar a la máquina. ¿podrás dar el ultimatum de la  partida?
