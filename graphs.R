@@ -1,10 +1,5 @@
 source('API.R')
 
-## remotes::install_github("hrbrmstr/streamgraph")
-library(streamgraph) 
-library(plotly)
-library(lattice)
-library(latticeExtra)
 source("configGraphs.R")
 ##################################################################
 ## COMMITS
