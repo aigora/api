@@ -1,16 +1,22 @@
+
 source('API.R')
 
-## remotes::install_github("hrbrmstr/streamgraph")
+##remotes::install_github("hrbrmstr/streamgraph")
 library(streamgraph) 
 library(plotly)
 library(lattice)
 library(latticeExtra)
+library(car)
+library(carData)
+library(foreign)
+library(ggplot2)
+library(psych)
 source("configGraphs.R")
 ##################################################################
 ## COMMITS
 ##################################################################
 
-teamsByRepo <- fread("csv/teamsByRepo.csv")
+teamsByRepo <- fread("csv/reposByTeams.csv")
 
 repoNames <- teamsByRepo$repo_name
 
@@ -31,6 +37,54 @@ commits <- commits[!(name %in%
 )]
 commits$date <- as.POSIXct(commits$date, format = "%Y-%m-%dT%H:%M:%SZ")
 commits <- commits[order(date)]
+
+#################################################################
+## Notas-Commits IE
+#################################################################
+#Añadir una carpeta llamada "notas" y dentro el archivo "calificaciones_IE.csv"
+#Borrar despues de ejecutar para no subir las notas al Github
+
+teamsNotasIE <- fread("csv/calificaciones_IE.csv")
+notasIE <- teamsNotasIE$calificacion
+twReposIE <- repoNames[grepl("twIE", repoNames)]
+commitsIE <- lapply(twReposIE, function(x)
+{
+    vals <- fread(paste0("csv/commits_", x, ".csv"))
+    vals$group <- x
+    vals
+})
+
+commitsIE <- do.call(rbind, commitsIE)
+commitsIE <- commitsIE[!(name %in%
+                         c("Juliauru",
+                           "MPerezMateo",
+                           "Oscar PerpiÃ±Ã¡n Lamigueiro")
+)]
+
+commitsGroupIE <- commitsIE[,
+                            .(N = .N),
+                            by = group,
+                            notasIE = notas
+]
+
+commitsGroupIE$notas <- notasIE
+commitsGroupIEOrdenado <- commitsGroupIE[with(commitsGroupIE, order(commitsGroupIE$N)), ] # Orden directo 
+x <- commitsGroupIEOrdenado$N
+y <- commitsGroupIEOrdenado$notas
+
+
+trellis.device(png, file = "figs/Grafico_Notas_Commits_IE.png", width = 2000, height = 2000, res = 300)
+limits <- quantile(commitsGroupIEOrdenado$N, c(0, 0.99))
+plot(x , y,xlab = "Commits", ylab = "Notas", pch = 19, col = "black")
+title(main = "Notas-Commits IE")
+grid(20,10)
+dev.off()
+
+
+
+
+
+
 
 ##################################################################
 ## Datos agregados
@@ -84,7 +138,7 @@ trellis.device(png, file = "figs/Histograma_Commits_Usuarios.png", width = 2000,
 limits <- quantile(commitsUser$N, c(0, 0.99))
 histogram(~ N, data = commitsUser, xlim = limits,
           nint = 40,
-          xlab = "NÃºmero de commits por usuario",
+          xlab = "Número de commits por usuario",
           ylab = "Porcentaje del total de usuarios")
 dev.off()
 
@@ -99,7 +153,7 @@ limits <- quantile(commitsGroup$N, c(0, 0.95))
 histogram(~ N, data = commitsGroup,
           xlim = limits,
           nint = 45,
-          xlab = "NÃºmero de commits por grupo",
+          xlab = "Número de commits por grupo",
           ylab = "Porcentaje del total de grupos")
 dev.off()
 
@@ -136,13 +190,13 @@ dev.off()
 
 trellis.device(png, file = "figs/Histograma_Max.png", width = 2000, height = 2000, res = 300)
 histogram(~ max, data = metricasGrupo, nint = 20,
-          xlab = "MÃ¡ximo normalizado", ylab = "Porcentaje")
+          xlab = "Máximo normalizado", ylab = "Porcentaje")
 dev.off()
 
 trellis.device(png, file = "figs/Histograma_Max_Profesor.png", width = 2000, height = 2000, res = 300)
 histogram(~ max|profe, data = metricasGrupo,
           layout = c(5, 1),
-          xlab = "MÃ¡ximo normalizado", ylab = "Porcentaje")
+          xlab = "Máximo normalizado", ylab = "Porcentaje")
 dev.off()
 
 
