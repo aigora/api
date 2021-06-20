@@ -5,9 +5,16 @@ source("configGraphs.R")
 ## COMMITS
 ##################################################################
 
-teamsByRepo <- fread("csv/teamsByRepo.csv")
+## Recupera consulta previa
+teams <- fread('csv/teams.csv')
+nTeams <- nrow(teams)
 
-repoNames <- teamsByRepo$repo_name
+reposByTeams <- fread("csv/reposByTeams.csv")
+
+## Recupera datos de un grupo de matriculación. P.ej IE
+twIE <- fread("csv/twIE.csv")
+
+repoNames <- reposByTeams$repo_name
 
 twRepos <- repoNames[grepl("tw", repoNames)]
 
@@ -50,6 +57,7 @@ commitsGroupDaily <- commits[,
                         by = .(date = as.IDate(date),
                                group = group)
                        ]
+
 xyplot(N ~ date,
        groups = group,
        data = commitsGroupDaily,
@@ -113,7 +121,7 @@ metricasGrupo <- commitsUserGroup[,
                                   .(
                                       range = diff(range(N)) / sum(N),
                                       max = max(N)/sum(N),
-                                      profe = substr(group, 3, 6)
+                                      grado = substr(group, 3, 4)
                                  ),
                                  by = group
                                  ]
@@ -123,9 +131,9 @@ histogram(~ range, data = metricasGrupo, nint = 20,
           xlab = "Rango normalizado", ylab = "Porcentaje")
 dev.off()
 
-trellis.device(png, file = "figs/Histograma_Rango_Profesor.png", width = 2000, height = 2000, res = 300)
-histogram(~ range|profe, data = metricasGrupo,
-          layout = c(5, 1),
+trellis.device(png, file = "figs/Histograma_Rango_Grado.png", width = 2000, height = 2000, res = 300)
+histogram(~ range|grado, data = metricasGrupo,
+          layout = c(3, 1),
           xlab = "Rango normalizado", ylab = "Porcentaje")
 dev.off()
 
@@ -135,8 +143,8 @@ histogram(~ max, data = metricasGrupo, nint = 20,
 dev.off()
 
 trellis.device(png, file = "figs/Histograma_Max_Profesor.png", width = 2000, height = 2000, res = 300)
-histogram(~ max|profe, data = metricasGrupo,
-          layout = c(5, 1),
+histogram(~ max|grado, data = metricasGrupo,
+          layout = c(3, 1),
           xlab = "Máximo normalizado", ylab = "Porcentaje")
 dev.off()
 
@@ -144,14 +152,56 @@ dev.off()
 ##################################################################
 ## Encuestas
 ##################################################################
-encuestas <- read.csv("csv/encuesta_estudiantes.csv")
 
-trellis.device(png, file = "figs/encuestas_estudiantes.png", width = 2000, height = 2000, res = 300)
-histogram(~ P1 + P2 + P3 + P4, data = encuestas,
+encuesta2019 <- fread("csv/encuesta_estudiantes_2019.csv")
+encuesta2019$year <- "2019"
+
+encuesta2021 <- fread("csv/encuesta_estudiantes_2021.csv")
+encuesta2021$year <- "2021"
+
+encuestas <- rbind(encuesta2019, encuesta2021)
+
+## Reorganiza: preguntas en una columna, respuestas en otra, y año en otra
+encuestas <- melt(encuestas,
+                  id.vars = "year", 
+                  measure.vars = c("P1", "P2", "P3", "P4"),
+                  variable.name = "Pregunta",
+                  value.name = "Respuesta")
+
+## 2019
+trellis.device(png, file = "figs/encuestas_estudiantes_2019.png", width = 2000, height = 2000, res = 300)
+
+histogram(~ Respuesta| Pregunta,
+          data = encuestas[year == 2019],
           layout = c(4, 1),
           xlab = "Valoraciones", ylab = "Porcentaje") +
     layer(panel.abline(v = 5, col = 'red'))
+
 dev.off()
 
+## 2021
+trellis.device(png, file = "figs/encuestas_estudiantes_2021.png", width = 2000, height = 2000, res = 300)
+
+histogram(~ Respuesta| Pregunta,
+          data = encuestas[year == 2021],
+          layout = c(4, 1),
+          xlab = "Valoraciones", ylab = "Porcentaje") +
+    layer(panel.abline(v = 5, col = 'red'))
+
+dev.off()
+
+
+## Evolución
+trellis.device(png, file = "figs/encuestas_estudiantes.png", width = 2000, height = 2000, res = 300)
+
+hEncuestas <- histogram(~ Respuesta | Pregunta * year,
+                        data = encuestas,
+                        layout = c(2, 4),
+                        xlab = "Valoraciones", ylab = "Porcentaje") +
+    layer(panel.abline(v = 5, col = 'red'))
+
+useOuterStrips(hEncuestas)
+
+dev.off()
 
 
