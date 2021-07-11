@@ -44,7 +44,7 @@ commits <- commits[order(date)]
 #Añadir una carpeta llamada "notas" y dentro el archivo "calificaciones_IE.csv"
 #Borrar despues de ejecutar para no subir las notas al Github
 
-teamsNotasIE <- fread("csv/calificaciones_IE.csv")
+teamsNotasIE <- fread("csv/notas/calificaciones_IE.csv")
 notasIE <- teamsNotasIE$calificacion
 twReposIE <- repoNames[grepl("twIE", repoNames)]
 commitsIE <- lapply(twReposIE, function(x)
@@ -63,8 +63,8 @@ commitsIE <- commitsIE[!(name %in%
 
 commitsGroupIE <- commitsIE[,
                             .(N = .N),
-                            by = group,
-                            notasIE = notas
+                            by = group
+                            ##notasIE = notas
 ]
 
 commitsGroupIE$notas <- notasIE
@@ -77,6 +77,47 @@ trellis.device(png, file = "figs/Grafico_Notas_Commits_IE.png", width = 2000, he
 limits <- quantile(commitsGroupIEOrdenado$N, c(0, 0.99))
 plot(x , y,xlab = "Commits", ylab = "Notas", pch = 19, col = "black")
 title(main = "Notas-Commits IE")
+grid(20,10)
+dev.off()
+
+#################################################################
+## Notas-Commits IA
+#################################################################
+#Añadir una carpeta llamada "notas" y dentro el archivo "calificaciones_IE.csv"
+#Borrar despues de ejecutar para no subir las notas al Github
+
+teamsNotasIA <- fread("csv/notas/calificaciones_IA.csv")
+notasIA <- teamsNotasIA$calificacion
+twReposIA <- repoNames[grepl("twIA", repoNames)]
+commitsIA <- lapply(twReposIA, function(x)
+{
+    vals <- fread(paste0("csv/commits_", x, ".csv"))
+    vals$group <- x
+    vals
+})
+
+commitsIA <- do.call(rbind, commitsIA)
+commitsIA <- commitsIA[!(name %in%
+                             c("Juliauru",
+                               "MPerezMateo",
+                               "Oscar PerpiÃ±Ã¡n Lamigueiro")
+)]
+
+commitsGroupIA <- commitsIA[,
+                            .(N = .N),
+                            by = group
+]
+
+commitsGroupIA$notas <- notasIA
+commitsGroupIAOrdenado <- commitsGroupIA[with(commitsGroupIE, order(commitsGroupIA$N)), ] # Orden directo 
+x <- commitsGroupIAOrdenado$N
+y <- commitsGroupIAOrdenado$notas
+
+
+trellis.device(png, file = "figs/Grafico_Notas_Commits_IA.png", width = 2000, height = 2000, res = 300)
+limits <- quantile(commitsGroupIAOrdenado$N, c(0, 0.99))
+plot(x , y,xlab = "Commits", ylab = "Notas", pch = 19, col = "black")
+title(main = "Notas-Commits IA")
 grid(20,10)
 dev.off()
 
