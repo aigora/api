@@ -1,6 +1,6 @@
 ## remotes::install_github("hrbrmstr/streamgraph")
-library(streamgraph) 
-library(plotly)
+## library(streamgraph) 
+## library(plotly)
 library(lattice)
 library(latticeExtra)
 library(RColorBrewer)
