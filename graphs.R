@@ -34,6 +34,7 @@ commits <- commits[!(name %in%
 commits$date <- as.POSIXct(commits$date, format = "%Y-%m-%dT%H:%M:%SZ")
 commits <- commits[order(date)]
 commits$course <- "2020-21"
+commits$projectDay <- as.IDate(commits$date) - as.IDate("2021-03-01")
 
 reposByTeams2019 <- fread("csv/teamsByRepo1819.csv")
 repoNames2019 <- reposByTeams2019$repo_name
@@ -55,9 +56,10 @@ commits2019 <- commits2019[!(name %in%
 commits2019$date <- as.POSIXct(commits2019$date, format = "%Y-%m-%dT%H:%M:%SZ")
 commits2019 <- commits2019[order(date)]
 commits2019$course <- "2018-19"
+commits2019$projectDay <- as.IDate(commits2019$date) - as.IDate("2019-03-01")
 
 commits <- rbind(commits2019,
-                 commits[, .(name, date, group, course)]) 
+                 commits[, .(name, date, group, course, projectDay)]) 
 
 ##################################################################
 ## Datos agregados
@@ -71,8 +73,8 @@ commitsUserGroup <- commits[,
 
 ## Commits diarios por usuario y grupo
 commitsUserDaily <- commits[,
-                       .(N = .N),
-                       by = .(date = as.IDate(date),
+                            .(N = .N),
+                       by = .(day = projectDay,
                               name = name,
                               group = group,
                               course = course)
@@ -81,10 +83,31 @@ commitsUserDaily <- commits[,
 ## Commits diarios por grupo
 commitsGroupDaily <- commits[,
                         .(N = .N),
-                        by = .(date = as.IDate(date),
+                        by = .(day = projectDay,
                                group = group,
                                course = course)
                        ]
+
+agGroupDaily <- commitsGroupDaily[,
+                                  .(min = min(N),
+                                    avg = mean(N),
+                                    max = max(N)),
+                                  by = .(day, course)]
+
+## Commits diarios totales (todos los grupos y usuarios juntos)
+commitsTotalDaily <- commits[,
+                        .(N = .N),
+                        by = .(day = projectDay,
+                               course)
+                        ]
+
+agTotalDaily <- commitsTotalDaily[,
+                                  .(min = min(N),
+                                    avg = mean(N),
+                                    max = max(N)),
+                                  by = .(day, course)]
+
+
 ## Commits totales por usuario
 commitsUser <- commits[,
                        .(N = .N),
@@ -100,10 +123,27 @@ commitsGroup <- commits[,
                         ]
 
 
-xyplot(N ~ date,
+bwplot(N ~ day|course,
        groups = group,
-       data = commitsGroupDaily,
-       type = 'l')
+       data = commitsGroupDaily[day >= 0],
+       horizontal = FALSE,
+       panel = panel.violin)
+
+xyplot(N ~ day,
+       data = commitsTotalDaily[day >= 0],
+       group = course, type = 'l')
+
+png(file = "figs/timelineCommits.png", width = 2000, height = 2000, res = 300)
+
+ggplot(agGroupDaily[day >= 0],
+       aes(x = day, y = avg),
+       xlab = "Days since the project started",
+       ylab = "Number of commits") + 
+  geom_ribbon(aes(ymin = min, ymax = max), alpha = 0.5) +
+    geom_line(col = 2) +
+    facet_wrap(~ course)
+
+dev.off()
 
 ## streamgraph(commitsGroupDaily,
 ##             key = group,
@@ -146,13 +186,6 @@ dev.off()
 
 dotplot(group ~ N, data = commitsGroup)
 
-## Commits diarios totales (todos los grupos y usuarios juntos)
-commitsTotalDaily <- commits[,
-                        .(N = .N),
-                        by = .(date = as.IDate(date))
-                        ]
-
-xyplot(N ~ date, data = commitsTotalDaily, type = 'l')
 
 ## SD y max de cada grupo
 metricasGrupo <- commitsUserGroup[,
