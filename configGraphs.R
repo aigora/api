@@ -4,6 +4,7 @@
 library(lattice)
 library(latticeExtra)
 library(RColorBrewer)
+library(ggplot2)
 
 myTheme <- custom.theme.2(pch = 19, cex = 0.7,
                           region = rev(brewer.pal(9, 'YlOrRd')),

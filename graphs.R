@@ -136,9 +136,9 @@ xyplot(N ~ day,
 png(file = "figs/timelineCommits.png", width = 2000, height = 2000, res = 300)
 
 ggplot(agGroupDaily[day >= 0],
-       aes(x = day, y = avg),
-       xlab = "Days since the project started",
-       ylab = "Number of commits") + 
+       aes(x = day, y = avg)) +
+       xlab("Days since the project started") +
+       ylab("Number of commits") + 
   geom_ribbon(aes(ymin = min, ymax = max), alpha = 0.5) +
     geom_line(col = 2) +
     facet_wrap(~ course)
