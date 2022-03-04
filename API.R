@@ -35,4 +35,12 @@ getPages <- function(x, simplify = FALSE)
 ## Ejemplo:
 ## aigora <- ghGET("/orgs/aigora")
 
+## Función wrapper de POST con autenticación
+ghPOST <- function(x, ...)
+{
+    POST(paste0(ghURL, x),
+        authenticate(Sys.getenv("GITHUB_PAT"), ""),
+        ...)
+}
+
 
