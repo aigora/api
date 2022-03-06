@@ -1,0 +1,31 @@
+"Title";"Body";"Milestone"
+"Menú del programa";"Debéis generar código que implemente un **menú provisional** con el que el usuario de vuestro programa debe interactuar. Este menú debe contener las opciones necesarias para acceder a las funcionalidades previstas, aunque aún no realizará ninguna acción. 
+El menú estará implementado mediante un bucle `switch-case` y se repetirá indefinidamente hasta que el usuario decida salir del programa.";1
+"Diagrama de flujo";"Debéis crear un fichero en formato [PDF](https://help.github.com/en/articles/rendering-pdf-documents), [GIF, JPEG o PNG](https://help.github.com/en/articles/rendering-and-diffing-images) (**no se admiten documentos Word o similar**) representando el [diagrama de flujo](https://es.wikipedia.org/wiki/Diagrama_de_flujo) previsto para vuestro programa. 
+En el punto de inicio tenéis un [tutorial](https://github.com/aigora/punto_inicio/wiki/6.1-C%C3%B3mo-realizar-un-diagrama-de-flujo) para crear diagramas de flujo.
+Este diagrama os servirá de guía para la implementación del trabajo. No obstante, ésta será la primera versión, por lo que según vayáis avanzando en el desarrollo del programa podréis y deberéis modificarlo.";1
+"Desarrollo de las principales funciones";"Debéis implementar las principales funciones del programa.
+Esta implementación puede tener cambios en la versión definitiva. Aún no es necesario que realice todas las funcionalidades previstas.
+Se recomienda el uso de librerías propias para alojar estas funciones.";2
+"Definición de las estructuras";"Debéis implementar la definición de las principales estructuras (datos tipo `struct`) que se usan en el programa.
+Esta implementación puede tener cambios en la versión definitiva.";2
+"Gestión de ficheros";"Debéis definir el **formato de los ficheros** que vuestro programa genera y lee (por ejemplo, el [formato CSV](https://es.wikipedia.org/wiki/Valores_separados_por_comas) es muy común para almacenar datos), y debéis **implementar el código** necesario para generar y leer estos ficheros.
+Esta implementación puede tener cambios en la versión definitiva.";2
+"Logo del proyecto";"Acompañando al código y a la documentación, debéis crear un logo que represente a vuestro proyecto. Este logo aparecerá en el [portfolio de proyectos de la web](https://aigora.github.io/#portfolio).
+La imagen debe llamarse **logo.png** (respetando las minúsculas), debe estar en formato PNG, y sus dimensiones deben ser: 400 x 289 píxeles.
+Esta imagen debe estar alojada en el nivel básico de vuestro repositorio (donde estén vuestros LICENSE y README.md).
+Si lo necesitáis, tenéis una [web](https://imageresizer.com/) para modificar el tamaño o formato de vuestra imagen.
+**Debéis cerrar esta issue cuando deis por entregado el logo.**";3
+"Documentación en wiki";"Acompañando al código, hay que elaborar la documentación del proyecto. Esta documentación debe estar recogida en la wiki del repositorio.
+En el punto de inicio tenéis las [instrucciones](https://github.com/aigora/punto_inicio/wiki/6.-C%C3%B3mo-presentar-el-trabajo) necesarias.
+**Debéis cerrar esta issue cuando deis por finalizado el trabajo.**";3
+"Entrega final del código";"El código del trabajo debe estar completo, sin errores de compilación, y con las funcionalidades descritas en el README y en el diagrama de flujo.
+
+Recordad que:
+
+- Es obligatorio que el trabajo se realice con funciones.
+- Es obligatorio utilizar vectores de estructuras.
+- Es obligatorio utilizar ficheros.
+- Está prohibido el uso de variables globales.
+
+**Debéis cerrar esta issue cuando deis por finalizado el trabajo.**";3

@@ -44,3 +44,26 @@ ghPOST <- function(x, ...)
 }
 
 
+ghIssue <- function(repo, title, body, milestone = NULL)
+{
+    ghPOST(paste0("/repos/aigora/",
+                  repo,
+                  "/issues"),
+            body = list(
+                title = title,
+                body = body,
+                milestone = milestone),
+            encode = "json")
+}
+
+ghMilestone <- function(repo, title, description, date)
+{
+    ghPOST(paste0("/repos/aigora/",
+                  repo,
+                  "/milestones"),
+            body = list(
+                title = title,
+                description = description,
+                due_on = date),
+            encode = "json")
+}
