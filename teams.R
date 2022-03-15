@@ -34,7 +34,9 @@ idx <- grep(cursoActual, repos)
 teams <- teams[idx,]
 nTeams <- nrow(teams)
 
+## Grupos de matriculación
 teams[, group := substr(repo, 3, 6)]
+groups <- unique(teams$group)
 
 ## Número de miembros
 nMembers <- sapply(seq_len(nTeams),
@@ -71,3 +73,15 @@ write.csv2(teams[, c("name", "id", "slug",
                      "repo")],
            file = "csv/teams.csv",
            row.names = FALSE)
+
+lapply(groups, function(x)
+{
+    write.csv2(teams[group == x,
+                     c("name", "id", "slug",
+                       "nMembers", "members",
+                       "group",
+                       "repo")],
+           file = paste0("csv/", "teams", x, ".csv"),
+           row.names = FALSE)
+})
+
