@@ -1,8 +1,10 @@
 source('API.R')
 
+cursoActual <- "2122"
+
 ##################################################################
 ## TEAMS
-# #################################################################
+##################################################################
 ## Recupera resultados de una consulta previa
 teams <- fread('csv/teams.csv')
 
@@ -10,7 +12,32 @@ teams <- fread('csv/teams.csv')
 ## Sólo ejecutar para enviar una nueva consulta a GitHub
 teams <- getPages("/orgs/aigora/teams", simplify = TRUE)
 
-nMembers <- sapply(seq_len(nrow(teams)),
+repos <- lapply(seq_len(nrow(teams)),
+                function(i)
+                {
+                    team <- teams[i,]
+                    cat(teams[i,]$name, "\n")
+                    
+                    repo <- ghGET(paste0("/orgs/aigora/teams/",
+                                         team$slug, "/repos"))
+                    repo <- content(repo, "parsed")
+                    if(length(repo) != 0)
+                        repo[[1]]$name
+                    else
+                        NA
+                })
+repos <- do.call(c, repos)
+teams[, repo:=repos]
+
+## Filtro a curso actual
+idx <- grep(cursoActual, repos)
+teams <- teams[idx,]
+nTeams <- nrow(teams)
+
+teams[, group := substr(repo, 3, 6)]
+
+## Número de miembros
+nMembers <- sapply(seq_len(nTeams),
                    function(i)
                    {
                        cat(teams[i,]$name, "\n")
@@ -20,13 +47,8 @@ nMembers <- sapply(seq_len(nrow(teams)),
                        res$members_count
                        }
                    )
-
-
 teams$nMembers <- nMembers
-## Elimina equipos de cursos anteriores (sin integrantes)
-teams <- teams[nMembers > 0]
 
-nTeams <- nrow(teams)
 
 members <- sapply(seq_len(nTeams),
                    function(i)
@@ -44,6 +66,8 @@ teams$members <- members
 
 
 write.csv2(teams[, c("name", "id", "slug",
-                     "nMembers", "members")],
+                     "nMembers", "members",
+                     "group",
+                     "repo")],
            file = "csv/teams.csv",
            row.names = FALSE)

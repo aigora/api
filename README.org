@@ -51,30 +51,20 @@ Para ejecutar el código hay que abrir el fichero deseado desde el explorador de
 
 *** Información de Equipos
 
- El fichero [[teams.R]] genera el fichero [[csv/teams.csv]]. Consta de 5 columnas: 
+ El fichero [[teams.R]] genera el fichero [[csv/teams.csv]]. Incluye la información de los equipos de trabajo del curso actual. Consta de 6 columnas: 
 
  - =name=: nombre del equipo.
  - =id=: código numérico de identificación del equipo.
  - =slug=: identificador alfanumérico del equipo.
  - =nMembers=: número de integrantes.
  - =members=: lista separada por comas de los integrantes del equipo.
+ - =group=: grupo de matriculación.
+ - =repo=: nombre del repositorio.
 
 
 *** Información de Repositorios
 
- El fichero [[repos.R]] genera el fichero [[csv/reposByTeams.csv]]. Este fichero incluye los repositorios a los que cada equipo tiene acceso.
-
- Consta de 6 columnas: 
-
- - =name=: nombre del equipo.
- - =slug=: identificador alfanumérico del equipo.
- - =id=: código numérico de identificación del equipo.
- - =nMembers=: número de integrantes.
- - =members=: lista separada por comas de los integrantes del equipo.
- - =repo_name=: identificador alfanumérico del repositorio.
- - =url=: URL del repositorio.
-
- A partir de esta información genera un fichero csv por cada grupo de matriculación incluyendo únicamente la información relativa a los equipos de trabajo que pertenecen a ese grupo de matriculación: [[csv/twIE.csv]], [[csv/twIA.csv]], [[csv/twIQ.csv]].
+ El fichero [[repos.R]] descarga los ficheros README de cada repositorio y los almacena en la carpeta [[md/][md]].
 
 *** Información de /commits/ en repositorios
 
