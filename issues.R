@@ -7,22 +7,33 @@ teams <- fread('csv/teams.csv')
 reposE105 <- teams[group == "E105", repo]
 
 
+pushMilestones <- function(repo, milestones)
+{
+    for (i in seq_len(nrow(milestones)))
+    {
+        res <- ghMilestone(repo,
+                           title = milestones[i, "Title"],
+                           description = milestones[i, "Description"],
+                           date = milestones[i, "Date"])
+        print(res)
+
+        Sys.sleep(1) ## Evita secondary rate limits
+    }    
+
+}
+
 lapply(seq_along(reposE105), function(i)
 {
 
     repo <- reposE105[i]
 
-    print(repo)
+    pushMilestones(repo, milestones)
     
-    ## for (i in seq_len(nrow(milestones)))
-    ## {
-    ##     res <- ghMilestone(repo,
-    ##                        title = milestones[i, "Title"],
-    ##                        description = milestones[i, "Description"],
-    ##                        date = milestones[i, "Date"])
-    ##     print(res)
-    ## }    
 
+})
+
+pushIssues <- function(repo, issues)
+{
     for (j in seq_len(nrow(issues)))
     {
         res <- ghIssue(repo,
@@ -32,7 +43,19 @@ lapply(seq_along(reposE105), function(i)
                        )
         print(res)
         
-        Sys.sleep(5)
+        Sys.sleep(1) ## Evita secondary rate limits
     }
+
+}
+
+
+lapply(seq_along(reposE105), function(i)
+{
+
+    repo <- reposE105[i]
+
+    pushIssues(repo, issues)
+    
+
 })
 
