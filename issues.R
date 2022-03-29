@@ -6,21 +6,33 @@ milestones <- read.csv2("issues/milestones.txt")
 teams <- fread('csv/teams.csv')
 reposE105 <- teams[group == "E105", repo]
 
-lapply(reposE105, function(repo)
+
+lapply(seq_along(reposE105), function(i)
 {
+
+    repo <- reposE105[i]
+
+    print(repo)
     
-    for (i in seq_len(nrow(milestones)))
-        ghMilestone(repo,
-                    title = milestones[i, "Title"],
-                    description = milestones[i, "Description"],
-                    date = milestones[i, "Date"])
+    ## for (i in seq_len(nrow(milestones)))
+    ## {
+    ##     res <- ghMilestone(repo,
+    ##                        title = milestones[i, "Title"],
+    ##                        description = milestones[i, "Description"],
+    ##                        date = milestones[i, "Date"])
+    ##     print(res)
+    ## }    
 
-    for (i in seq_len(nrow(issues)))
-        ghIssue(repo,
-                title = issues[i, "Title"],
-                body = issues[i, "Body"],
-                milestone = issues[i, "Milestone"]
-                )
-
+    for (j in seq_len(nrow(issues)))
+    {
+        res <- ghIssue(repo,
+                       title = issues[j, "Title"],
+                       body = issues[j, "Body"],
+                       milestone = issues[j, "Milestone"]
+                       )
+        print(res)
+        
+        Sys.sleep(5)
+    }
 })
 
