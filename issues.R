@@ -5,6 +5,7 @@ milestones <- read.csv2("issues/milestones.txt")
 
 teams <- fread('csv/teams.csv')
 reposE105 <- teams[group == "E105", repo]
+reposQ103 <- teams[group == "Q103", repo]
 
 
 pushMilestones <- function(repo, milestones)
@@ -22,16 +23,6 @@ pushMilestones <- function(repo, milestones)
 
 }
 
-lapply(seq_along(reposE105), function(i)
-{
-
-    repo <- reposE105[i]
-
-    pushMilestones(repo, milestones)
-    
-
-})
-
 pushIssues <- function(repo, issues)
 {
     for (j in seq_len(nrow(issues)))
@@ -48,14 +39,24 @@ pushIssues <- function(repo, issues)
 
 }
 
+##################################################################
+## Asignación masiva
+##################################################################
 
-lapply(seq_along(reposE105), function(i)
+repos <- reposQ103
+
+lapply(seq_along(repos), function(i)
 {
+    repo <- repos[i]
+    pushMilestones(repo, milestones)
+})
 
-    repo <- reposE105[i]
 
+
+lapply(seq_along(repos), function(i)
+{
+    repo <- repos[i]
     pushIssues(repo, issues)
-    
-
+    Sys.sleep(5)
 })
 
