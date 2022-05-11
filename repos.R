@@ -5,11 +5,13 @@ teams <- fread('csv/teams.csv')
 
 groups <- unique(teams$group)
 
+curso <- substr(teams$repo[1], 8, 11)
+
 ##################################################################
 ## Obtiene README de cada repositorio
 ##################################################################
 
-repos <- teams$repos
+repos <- teams$repo
 
 ## Descarga README de cada repositorio y lo graba en carpeta MD
 lapply(repos, function(x)
@@ -36,7 +38,7 @@ lapply(groups, function(x)
         content <- paste(content, collapse = "\n")
     })
     README <- paste(README, collapse = "\n\\newpage\n\n")
-    READMEfich <- paste0("md/README_", group, ".md")
+    READMEfich <- paste0("md/README_", x, "_", curso, ".md")
     writeLines(README, READMEfich)
 })
 

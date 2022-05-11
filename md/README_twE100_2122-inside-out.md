@@ -1,0 +1,12 @@
+# Corredor del Laberinto
+Realizar un programa que permita al usiaro elegir entre laberintos de distinta dificultad. 
+
+## Integrantes del equipo
+Ana Ramos Palacios (anarp09), 
+Almudena Ramos Platero (almudenarp), 
+Eduardo Villaverde Carrascosa (Glutenfreee), 
+Alejandro Urraco Nieto (AlejandroUrraco).
+
+## Objetivos del trabajo
+Conocer los conceptos generales de la programación básica y su aplicación a la vida diaria.
+Aprender a trabajar en equipo para desarrollarnos mejor en un fututo en el ámbito laboral.
