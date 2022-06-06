@@ -1,9 +1,15 @@
 source("API.R")
 
-teamsByRepo <- fread("csv/teamsByRepo.csv")
-repoNames <- teamsByRepo$repo_name
-idx <- grep("tw", repoNames)
+teams <- fread('csv/teams.csv')
+repoNames <- teams$repo
+
+grupo <- "E105"
+curso <- 2122
+cadena <- paste0("tw", grupo,  "_", curso)
+
+idx <- grep(cadena, repoNames)
 twRepos <- repoNames[idx]
+
 
 mainURL <- "https://github.com/aigora/"
 reposURL <- paste0(mainURL, twRepos, ".git")
